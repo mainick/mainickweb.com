@@ -9,11 +9,12 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
-      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
+      <meta property="og:locale" content={siteMetadata.locale} />
       <meta property="og:type" content={ogType} />
-      <meta property="og:site_name" content={siteMetadata.title} />
-      <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
+      <meta property="og:site_name" content={siteMetadata.title} />
       {ogImage.constructor.name === 'Array' ? (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       ) : (

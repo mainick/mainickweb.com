@@ -12,7 +12,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/mainick/mainickweb.com',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpeg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/avatar.jpeg',
   email: 'maico.orazio@gmail.com',
   github: 'https://github.com/mainick',
   twitter: 'http://twitter.com/mainick',
