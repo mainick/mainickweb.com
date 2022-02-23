@@ -4,9 +4,11 @@ const siteMetadata = {
   headerTitle: 'MaiNick Web',
   description:
     'MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale',
+  description_excerpt:
+    'Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale',
   language: 'it',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.mainickweb.com/',
+  siteUrl: 'https://www.mainickweb.com',
   siteRepo: 'https://github.com/mainick/mainickweb.com',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpeg',
