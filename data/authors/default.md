@@ -1,6 +1,6 @@
 ---
 name: Maico Orazio
-avatar: /static/images/avatar.jpeg
+avatar: /static/images/avatar.png
 occupation: Senior Web Application Developer
 company: weBeetle
 email: maico.orazio@gmail.com

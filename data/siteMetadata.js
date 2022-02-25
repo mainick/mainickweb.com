@@ -11,8 +11,8 @@ const siteMetadata = {
   siteUrl: 'https://www.mainickweb.com',
   siteRepo: 'https://github.com/mainick/mainickweb.com',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.jpeg',
-  socialBanner: '/static/images/avatar.jpeg',
+  image: '/static/images/avatar.png',
+  socialBanner: '/static/images/avatar.png',
   email: 'maico.orazio@gmail.com',
   github: 'https://github.com/mainick',
   twitter: 'http://twitter.com/mainick',
@@ -20,6 +20,13 @@ const siteMetadata = {
   devto: 'https://dev.to/mainick',
   linkedin: 'http://www.linkedin.com/in/maicoorazio',
   locale: 'it-IT',
+  favicon: {
+    apple: '/static/favicons/apple-touch-icon.png',
+    with32: '/static/favicons/favicon-32x32.png',
+    with16: '/static/favicons/favicon-16x16.png',
+    webmanifest: '/static/favicons/site.webmanifest',
+    ico: '/static/favicons/favicon.ico',
+  },
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
