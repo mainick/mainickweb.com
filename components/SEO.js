@@ -27,7 +27,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       <meta name="twitter:image" content={twImage} />
       <link
         rel="canonical"
-        href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
+        href={
+          canonicalUrl
+            ? `${siteMetadata.siteUrl}/blog${canonicalUrl}`
+            : `${siteMetadata.siteUrl}${router.asPath}`
+        }
       />
       <meta name="google-site-verification" content="sRNs-QI2BFxY7HPTZETOyTsQrKw3XycylW8R5EAa_Xo" />
     </Head>
@@ -81,7 +85,7 @@ export const BlogSEO = ({
   lastmod,
   url,
   images = [],
-  canonicalUrl,
+  permalink: canonicalUrl,
 }) => {
   const router = useRouter()
   const publishedAt = new Date(date).toISOString()
