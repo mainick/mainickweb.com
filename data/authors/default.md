@@ -20,24 +20,26 @@ percorso professionale e dei miei interessi, specialmente dal lato tecnico delle
 
 > Perché condividere è imparare
 
-Credo che annotare e condividere sia il modo migliore per imparare! Così anni fa' ho creato questo blog, dove conservo
+Credo che annotare e condividere sia il modo migliore per imparare! Così anni fa' ho creato questo blog, dove condivido
 cose che ho imparato, che trovo utili e necessari da conservare e condividere.
 
 ## About me 😎
 
-Sono un web application developer con oltre 15 anni di esperienza nello sviluppo e creazione di applicazioni web,
-con una forte attenzione al backend. Mi piace molto
-programmare ❤, lavoro principalmente con **Php** e **ReactJS / JavaScript**.
+Sono un **web application developer** con oltre 15 anni di esperienza nello sviluppo e creazione di applicazioni web,
+con una forte attenzione al backend.
 
-Fondamentalmente sono un curioso e appassionato di **tecnologia e computer**. I miei progetti precedenti includono lo sviluppo
-e la creazione di applicazioni web con framework **PHP Symfony** e **JavaScript ReactJS**.
+**Mi piace molto programmare ❤**. Nel corso degli anni ho acquisito una vasta esperienza nella progettazione e realizzazione di applicazioni web,
+nell'analizzare e formalizzare problemi complessi e applicare metodologie informatiche per determinarne la soluzione,
+con forti capacità organizzative e di problem-solving.
 
-Mi piace imparare cose nuove sperimentando tecnologie all'avanguardia:
-**in questo momento, per lo più legate a JS**.
+Lavoro principalmente con **Php** e **JavaScript**. I miei progetti precedenti includono lo sviluppo e
+la creazione di applicazioni web con framework **PHP Symfony** e librerie **JavaScript**, quali **jQuery** e **ReactJS**.
+
+Fondamentalmente sono un curioso e appassionato di **tecnologia e computer**. Continuo ad approfondire le mie conoscenze
+e a sperimentare, per migliorarmi e seguire l'evoluzione di questo fantastico mondo: **in questo momento, per lo più legate a JS**.
 
 Quando sono lontano dal mio pc di lavoro, mi piace andare in giro con la mia mountain bike 🚲, giocare a qualche FPS 🎮
-e dedicare tempo alla mia famiglia 👨‍👩‍👦. Inoltre, amo viaggiare 🏖️, vedere nuovi posti
-e incotrare nuove persone.
+e dedicare tempo alla mia famiglia 👨‍👩‍👦. Inoltre, amo viaggiare 🏖️, vedere nuovi posti e incontrare nuove persone.
 
 ## Tech stack ⚙️
 
