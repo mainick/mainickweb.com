@@ -8,7 +8,9 @@ import formatDate from '@/lib/utils/formatDate'
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
+    let searchContent = frontMatter.title + frontMatter.excerpt
+    if (frontMatter.tag) searchContent += frontMatter.tag.join(' ')
+    if (frontMatter.tags) searchContent += frontMatter.tags.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
@@ -23,7 +25,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <div className="relative max-w-lg">
+          <div className="relative">
             <input
               aria-label="Cerca articoli"
               type="text"
@@ -50,7 +52,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, excerpt, tags, tag } = frontMatter
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -68,13 +70,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
-                        {tags.map((tag) => (
-                          <Tag key={tag} text={tag} />
-                        ))}
+                        {tags && tags.map((tag) => <Tag key={tag} text={tag} />)}
+                        {tag && tag.map((tag) => <Tag key={tag} text={tag} />)}
                       </div>
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                      {summary}
+                      {excerpt}
                     </div>
                   </div>
                 </article>
