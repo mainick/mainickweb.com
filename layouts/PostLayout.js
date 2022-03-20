@@ -17,7 +17,7 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, tag } = frontMatter
 
   return (
     <SectionContainer>
@@ -102,9 +102,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       Tags
                     </h2>
                     <div className="flex flex-wrap">
-                      {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
-                      ))}
+                      {tags && tags.map((tag) => <Tag key={tag} text={tag} />)}
+                      {tag && tag.map((tag) => <Tag key={tag} text={tag} />)}
                     </div>
                   </div>
                 )}
