@@ -4,6 +4,7 @@ import Facebook from './facebook.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import Devto from './dev.svg'
+import MediumCom from './medium.svg'
 
 // Icons taken from: https://simpleicons.org/
 
@@ -14,6 +15,7 @@ const components = {
   devto: Devto,
   linkedin: Linkedin,
   twitter: Twitter,
+  mediumcom: MediumCom,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

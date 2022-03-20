@@ -18,6 +18,7 @@ const siteMetadata = {
   twitter: 'http://twitter.com/mainick',
   facebook: 'http://www.facebook.com/maico.orazio',
   devto: 'https://dev.to/mainick',
+  mediumcom: 'https://medium.com/@mainick',
   linkedin: 'http://www.linkedin.com/in/maicoorazio',
   locale: 'it-IT',
   favicon: {
