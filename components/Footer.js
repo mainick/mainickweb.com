@@ -19,6 +19,10 @@ export default function Footer() {
           <div>
             <Link href="/">{siteMetadata.author}</Link>
           </div>
+          <div>{` • `}</div>
+          <div>
+            <Link href="/privacy">Privacy policy</Link>
+          </div>
         </div>
       </div>
     </footer>
