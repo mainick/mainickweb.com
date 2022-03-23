@@ -13,6 +13,7 @@ export async function getStaticProps() {
 
 export default function Tags({ tags }) {
   const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
+  const popularTags = sortedTags.filter((tag) => tags[tag] && tags[tag] > 1)
   return (
     <>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
@@ -24,7 +25,7 @@ export default function Tags({ tags }) {
         </div>
         <div className="flex max-w-lg flex-wrap">
           {Object.keys(tags).length === 0 && 'No tags found.'}
-          {sortedTags.map((t) => {
+          {popularTags.map((t) => {
             return (
               <div key={t} className="mt-2 mb-2 mr-5">
                 <Tag text={t} />
