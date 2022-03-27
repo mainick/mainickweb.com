@@ -1,0 +1,174 @@
+---
+title: 'Menu verticale jQuery con effetto fisarmonica'
+date: '2010-04-20T08:00:33+01:00'
+status: publish
+permalink: /menu-verticale-jquery-con-effetto-fisarmonica
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 372
+images: /static/images/posts/menu-verticale.jpg
+category:
+  - javascript
+  - jQuery
+tag:
+  - javascript
+  - jQuery
+  - menu
+  - 'menu verticale'
+  - 'plugin easing'
+post_format: []
+---
+
+![menu-verticale.jpg](/static/images/posts/menu-verticale.jpg)
+
+**UPDATE:** <u>_Ho pubblicato un [secondo tutorial](/blog/menu-verticale-con-effetto-fisarmonica-versione-history/ 'Seconda versione del tutorial come realizzare un menu verticale con jQuery') in cui ho riportato le modifiche richieste nei feedback, come rendere la voce del menu principale anch’essa cliccabile e poter rimanere aperto il sotto menu corrispondente alla pagina visitata._</u>
+
+In questo tutoriale faremo un semplice **menu verticale con jQuery** ma che cattura l’attenzione del navigatore con l’aiuto di CSS e del [plugin Easing](http://gsgd.co.uk/sandbox/jquery/easing/ 'jQuery Easing Plugin') per l’effetto a fisarmonica.
+
+## Documento HTML
+
+Come potete vedere in seguito dalla demo, il menu è diviso in quattro voci, ciascuna definita da un elemento `LI` posizionati all’interno dell’elenco principale `UL`:
+
+```html
+<li class="menu">
+  <!-- costituisce ogni sezione del menu principale -->
+  <ul>
+    <!-- titolo della sezione che fa aprire il sotto menu -->
+    <li class="title"><a href="#">Categoria Firefox</a></li>
+    <li class="sub-menu">
+      <ul>
+        <li>
+          <a href="http://www.mainickweb.com/hack-css-per-firefox-opera-safari-e-internet-explorer/"
+            >Articolo 1</a
+          >
+        </li>
+        <li><a href="http://www.mainickweb.com/firefox-3-le-caratteristiche/">Articolo 2</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+```
+
+Ogni voce del menu contiene un altro elenco `UL`, formato dalla voce del menu principale (**li.title**) e da un altro elenco `UL` che rappresenta il sotto menu (**li.sub-menu**).  
+All’interno dell’elemento `li.title` abbiamo un ancora a cui poi associamo un gestore di eventi jQuery che fa aprire il sotto menu corrispondente: il **menu a discesa** è nascosto di default tramite la proprietà css `display: none`.
+
+## Foglio di stile CSS
+
+Con uno stile accattivante, anche la più semplice idea può fare una grande differenza nell’attenzione del visitatore.  
+E’ importante fare particolare attenzione che il codice CSS sia valido e che funzioni bene in tutti i browser:
+
+```css
+li.menu {
+  /* Voci dell'elenco principale */
+  width: 100%;
+  padding: 5px 0;
+}
+
+li.title a {
+  /* Voce del menu principale */
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 34px;
+  padding: 10px 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #cc0000;
+  color: #ffffff;
+  font-family: BPreplay, Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  overflow: hidden;
+}
+
+li.title a:hover {
+  background-color: #f40000;
+  text-decoration: none;
+}
+
+li.title a span {
+  /* Questo span agisce come parte finale della sezione title */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 44px;
+}
+
+.sub-menu {
+  /* Sotto menu */
+  display: none;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.sub-menu li {
+  /* Voci del sotto menu */
+  margin: 5px 0;
+  padding: 4px 18px;
+  border: 1px solid #40392c;
+  background-color: #2f2f2f;
+  color: #cccccc;
+}
+```
+
+## Effetti con jQuery
+
+In primo luogo abbiamo bisogno di includere alcuni script nel documento HTML (questo codice va messo all’interno della sezione `HEAD`):
+
+```html
+<script
+  type="text/javascript"
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+></script>
+<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="script.js"></script>
+```
+
+Per prima cosa bisogna includere la libreria jQuery (in questo caso dai server di Google), poi il plugin Easing e infine il nostro file di script.
+
+Come potete notare dalla demo, l’effetto che si ha nell’aprire un sotto menu è simile ad un rimbalzo. Questo risultato è ottenuto con l’aiuto del plugin Easing per jQuery: esso prevede una serie di effetti interessanti.
+
+Ecco il codice del nostro file di script:
+
+```js
+$(document).ready(function () {
+  /* Cambiare l'effetto da utilizzare */
+  $.easing.def = 'easeOutBounce'
+
+  /* Associare una funzione all'evento click sul link */
+  $('li.title a').click(function (e) {
+    /* Finding the drop down list that corresponds to the current section: */
+    var subMenu = $(this).parent().next()
+
+    /* Trovare il sotto menu che corrisponde alla voce cliccata */
+    $('.sub-menu').not(subMenu).slideUp('slow')
+    subMenu.stop(false, true).slideToggle('slow')
+
+    /* Prevenire l'evento predefinito (che sarebbe di seguire il collegamento) */
+    e.preventDefault()
+  })
+})
+```
+
+Per prima cosa bisogna impostare l’effetto da utilizzare (**easeOutBounce**), e quindi associare una funzione da compiere per l’evento click sul link in `li.title`: si ottiene il corrispondente sotto menu (linea ) e lo si mostra (linea ), nascondendo tutti gli altri (linea ).
+
+Il metodo `slideToggle` di jQuery controlla se l’elemento è già visibile sulla pagina, e decide se mostrarlo o nasconderlo: in questo modo, quando si fa click su una sezione del menu già aperta, essa viene semplicemente chiusa.  
+Dopo questo, usiamo `e.preventDefault()` per impedire al browser di seguire il collegamento (il comportamento normale per avere cliccato su un link).
+
+<a
+  href="/static/esempi/jquery/menu-verticale.html"
+  title="Demo menu verticale con jQuery"
+  target="_blank"
+>
+  Demo
+</a>
+<a
+  href="/static/esempi/jquery/menu-verticale.zip"
+  title="Download codice menu verticale con jQuery"
+  target="_blank"
+>
+  Download
+</a>

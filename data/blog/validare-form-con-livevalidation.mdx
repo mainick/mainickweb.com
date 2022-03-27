@@ -1,0 +1,206 @@
+---
+title: 'Validare form con LiveValidation'
+date: '2008-10-15T15:17:49+01:00'
+status: publish
+permalink: /validare-form-con-livevalidation
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 131
+images: /static/images/posts/livevalidation.jpg
+category:
+  - javascript
+tag:
+  - javascript
+  - form
+  - validazione
+post_format: []
+---
+
+[![](/static/images/posts/livevalidation.jpg 'livevalidation')](https://github.com/alechill/livevalidation)
+
+I form sono molto utili per un iterazione con gli utenti visitatori del sito, ma nella compilazione non c’è situazione più noiosa di essere avvisati, riguardo un errore di compilazione, dopo averlo inviato.
+
+Ci occupiamo in questo articolo di [**LiveValidation**](https://github.com/alechill/livevalidation 'LiveValidation - Validare durante la digitazione'), una libreria in javascript che sto studiando in questi giorni, che risulta (tra quelle provate) la più semplice nell’utilizzo ed efficace.
+
+Il sito ufficiale della libreria presenta oltre al [download](http://www.livevalidation.com/download 'download libreria di validazione'), una completa [documentazione](http://www.livevalidation.com/documentation 'documentazione LiveValidation') e una pagina ricca di [esempi](http://www.livevalidation.com/examples 'regole input validati'). Sono previste due versioni: una versione basata su Prototype e quella standalone (per utilizzarla con qualsiasi altro javascript framework), e per ciascuna è disponibile una versione compressa.
+
+## Validare input
+
+Per utilizzare la libreria bisogna inserirla nella sezione head del documento, in questo modo:
+
+```html
+<script type="text/javascript" src="js/livevalidation_standalone.js"></script>
+```
+
+Tutti i campi da validare nel form della pagina devono essere associati ad un **ID identificativo univoco**. Subito dopo la form, bisogna inserire il codice javascript che richiama la **funzione di validazione** della libreria:
+
+```html
+<input type="text" id="campo" />
+<script type="text/javascript">
+  var valCampo = new LiveValidation('campo');
+  valCampo.add(funzione della libreria);
+</script>
+```
+
+Nella prima riga del codice abbiamo creato un nuovo oggetto LiveValidation che ha come argomento l’ID dell’input, andiamo poi ad aggiungere all’oggetto il metodo della libreria che vogliamo utilizzare per la convalida dell’input.
+
+Il primo esempio prodotto, aggiungendo il metodo Presence, esso effettua la verifica sull’**avvenuta compilazione del campo**.
+Provando l’<a href="/static/esempi/validare-form/campo-obbligatorio.html" title="Campo obbligatorio" target="_blank">esempio</a>
+noterete la presenza degli avvisi in inglese, impostati di default incorporati nel codice della libreria.
+
+Per poterli personalizzare, senza mettere mani al codice della libreria, LiveValidation consente di definire una serie di parametri per ogni modulo, tra cui dei messaggi che andranno a sovrascrivere quelli di default.
+
+Modifichiamo il primo esempio, **personalizzando i messaggi di avviso** (<a href="/static/esempi/validare-form/campo-obbligatorio2.html" title="Campo obbligatorio - avviso" target="_blank">esempio</a>):
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Presence, { failureMessage: 'Il campo deve essere compilato' })
+```
+
+Il metodo Format consente di validare il contenuto inserito nel campo rispetto ad un’**espressione regolare** definita come parametro
+(<a href="/static/esempi/validare-form/espressione-regolare.html" title="Campo validato rispetto una espressione regolare" target="_blank">esempio</a>):
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Format, {
+  pattern: /stringa/i,
+  failureMessage: 'Devi inserire la parola stringa',
+})
+```
+
+Il campo sarà validato solo se al suo interno viene inserita la stringa `stringa`.
+
+Per <strong>validare valori numerici</strong> si utilizza il metodo Numericality
+(<a href="/static/esempi/validare-form/campo-numerico.html" title="Valore numerico" target="_blank">esempio</a>):
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Numericality, { notANumberMessage: 'Devi inserire un valore numerico' })
+```
+
+In questo caso, per impostare il messaggio di non validità, il parametro da usare è `notANumberMessage`.
+
+Al metodo Numericality è possibile passare ulteriori parametri:
+
+- **onlyInteger**: true – validare solo numeri interi (non decimali)
+- **is**: 15 – verifica che il valore inserito sia 15
+- **minimum**: 12 – verifica che il valore inserito sia maggiore o uguale a 12
+- **maximum**: 22 – verifica che il valore inserito sia minore o uguale a 22
+
+I parametri sopra possono essere combinati, l’unica espressione che non è possibile combinare è ‘is’ con ‘minimum’ o ‘maximum’, dove ‘is’ avrà la precedenza.
+Questo <a href="/static/esempi/validare-form/campo-numerico-in-range.html" title="Valore numerico intero compreso tra 12 e 22" target="_blank">esempio</a>
+verifica che il valore inserito rientri in un range e sia intero:
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Numericality, {
+  minimum: 12,
+  maximum: 22,
+  onlyInteger: true,
+  notANumberMessage: 'Devi inserire un valore numerico',
+  notAnIntegerMessage: 'Deve essere un numero intero',
+  tooLowMessage: 'Non deve essere inferiore a 12',
+  tooHighMessage: 'Non deve essere superiore a 22',
+})
+```
+
+## Altri tipi di validazione
+
+### Lunghezza
+
+E’ possibile utilizzare gli stessi parametri descritti sopra per il metodo Length, con il quale è possibile validare un campo rispetto al **numero dei caratteri** inseriti.
+
+### Inclusione ed esclusione
+
+E’ possibile impostare una serie di valori rispetto alla quale verificare la **corrispondenza esatta o parziale** del contenuto inserito nel campo. Attraverso il metodo Inclusion il campo sarà validato solo se contiene i valori passati:
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Inclusion, { within: ['mainick', 'blog', 'javascript'] })
+```
+
+Al contrario, usando il metodo Exclusion il campo non sarà validato se contiene i valori passati:
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Exclusion, { within: ['mainick', 'blog', 'javascript'] })
+```
+
+Passando il parametro ‘partialMatch: true’ è possibile controllare anche solo su una parte della stringa.
+
+### Checkbox
+
+Attraverso il metodo Acceptance è possibile verificare che un **checkbox sia stato o meno spuntato** (esempio):
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Acceptance, { failureMessage: 'Devi spuntarla' })
+```
+
+### Conferma
+
+Il metodo Confirmation verifica l’**uguaglianza tra due input**, molto utile per la **verifica della password**:
+
+```html
+Inserisci password: <input type="password" id="password" /><br />
+Conferma password: <input type="password" id="confPass" />
+<script type="text/javascript">
+  var valConfPass = new LiveValidation('confPass', { validMessage = "OK" });
+  valConfPass.add(Validate.Confirmation, { match: 'password', failureMessage: "Le password non coincidono" });
+</script>
+```
+
+### E-mail
+
+```js
+var valCampo = new LiveValidation('campo', { validMessage: 'OK' })
+valCampo.add(Validate.Email, { failureMessage: 'Devi inserire un indirizzo e-mail valido' })
+```
+
+## Validare form
+
+E’ possibile combinare i diversi metodi descritti sopra su un solo campo.
+
+Il costruttore della libreria consente di istituire il campo del form come un oggetto LiveValidation a cui è possibile passare alcuni parametri facoltativi:
+
+- **validMessage** – messaggio visualizzato alla validazione del campo
+- **onlyOnBlur**: true – consente di effettuare la validazione solo quando l’input perde il focus
+- **wait**: 500 – tempo desiderato prima di validare l’input dall’ultima volta che si è premuto un tasto
+- **onlyOnSubmit**: true – consente di effettuare la validazione sol quando il modulo sarà inviato
+
+## Personalizzare lo stile degli avvisi
+
+Tramite un foglio di stile possiamo **personalizzare lo stile e la formattazione degli avvisi**. E’ possibile definire appena cinque regole con classi che si applicano ai messaggi di avviso e ai campi:
+
+```css
+/* classe che si applica a tutti i messaggi di validazione */
+.LV_validation_message {
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+/* classe che si applica ai messaggi di validità */
+.LV_valid {
+  color: #00cc00;
+}
+/* classe che si applica ai messaggi di non validità */
+.LV_invalid {
+  color: #cc0000;
+}
+/* stili applicati ai campi validi */
+.LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active {
+  border: 1px solid #00cc00;
+}
+/* stili applicati ai campi non validi */
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+  border: 1px solid #cc0000;
+}
+```

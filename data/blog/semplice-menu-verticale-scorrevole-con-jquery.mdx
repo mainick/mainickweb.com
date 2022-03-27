@@ -1,0 +1,217 @@
+---
+title: 'Semplice menu verticale scorrevole con jQuery'
+date: '2009-06-08T08:00:43+01:00'
+status: publish
+permalink: /semplice-menu-verticale-scorrevole-con-jquery
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 240
+images: /static/images/posts/menu-verticale-scorrevole.png
+category:
+  - javascript
+  - jQuery
+tag:
+  - javascript
+  - jQuery
+post_format: []
+---
+
+![menu verticale scorrevole](/static/images/posts/menu-verticale-scorrevole.png 'menu verticale scorrevole')
+
+In questo articolo vi mostrerò come creare un semplice menu scorrevole utilizzando jQuery.
+
+Al passaggio del mouse su una delle voci di menu principale viene fuori il rispettivo sub-menu, quando il mouse passa su un’altra voce del menu principale si apre il suo sub-menu chiudendo quello precedente.
+
+La prima cosa da fare è quella di inserire il seguente codice all’interno della sezione _&lt;head&gt;_:
+
+```html
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+```
+
+Si può notare che ci sono 3 file **style.css**, **jquery-1.3.4.min.js** e **menu.js**: il primo file rappresenta lo stile del menu che tratterò dopo; il secondo file è la libreria **jQuery 1.3.2** che potete scaricare dal sito [jquery.com](http://www.jquery.com 'jQuery: The Write Less, Do More, JavaScript Library') o caricarla direttamente dai server di [Google](https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js 'Libreria jQuery dai server di Google'); il terzo file contiene il codice delle funzioni ed è il seguente:
+
+```js
+$(document).ready(function () {
+  //
+  // Nascondo tutti i menu principali
+  $('#menu1 > ul')
+    .animate({ bottom: '0px' }, { queue: false, duration: 350 })
+    .css('display', 'none')
+  $('#menu2 > ul')
+    .animate({ bottom: '0px' }, { queue: false, duration: 350 })
+    .css('display', 'none')
+  $('#menu3 > ul')
+    .animate({ bottom: '0px' }, { queue: false, duration: 350 })
+    .css('display', 'none')
+
+  $('#menu1').hover(function () {
+    //
+    // effetto uscita altri menu
+    $('#menu2 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    $('#menu3 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    //
+    // effetto entrata menu
+    $('#menu1 > ul')
+      .animate({ top: '33px' }, { queue: false, duration: 350 })
+      .css('display', 'block')
+  })
+
+  $('#menu2').hover(function () {
+    //
+    // effetto uscita altri menu
+    $('#menu1 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    $('#menu3 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    //
+    // effetto entrata menu
+    $('#menu2 > ul')
+      .animate({ top: '33px' }, { queue: false, duration: 350 })
+      .css('display', 'block')
+  })
+
+  $('#menu3').hover(function () {
+    //
+    // effetto uscita altri menu
+    $('#menu1 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    $('#menu2 > ul')
+      .animate({ top: '-200px' }, { queue: false, duration: 350 })
+      .css('display', 'none')
+    //
+    // effetto entrata menu
+    $('#menu3 > ul')
+      .animate({ top: '33px' }, { queue: false, duration: 350 })
+      .css('display', 'block')
+  })
+})
+```
+
+La prima riga del codice precedente significa che quando viene caricato il documento vengono eseguite le funzioni al suo interno.
+
+La prima parte del codice permette di nascondere le voci dei sub-menu, in modo che se javascript non è attivo vengono lo stesso visualizzati.
+
+Bisogna poi creare le altri parti del codice per ogni voce di menu principale: il metodo _hover_ di jQuery permette di catturare l’evento di passaggio del mouse sulla voce di menu e eseguire il codice al suo interno, che contemporaneamente all’apertura del rispettivo sub-menu chiude tutti gli altri sub-menu.  
+Il metodo _animate_ permette di eseguire un’animazione sull’oggetto dalla posizione iniziale alla posizione _top_ scritta con una velocità descritta dalla durata in millesecondi dell’animazione, visualizzando o nascondendo l’oggetto impostando con il metodo _css_ la proprietà _display_.
+
+Il codice html della pagina non è altro che un insieme di elenchi non ordinati di cui ad ogni voce dell’elenco principale è creato un nuovo elenco con le voci del sub-menu:
+
+```html
+<div id="menu-wrapper">
+  <ul>
+    <li id="menu1" class="menu">
+      <div class="menu-title"><a href="#" onclick="return false;">Menu 1</a></div>
+      <ul class="submenu">
+        <li><a href="#">Sub-menu 1.1</a></li>
+        <li><a href="#">Sub-menu 1.2</a></li>
+        <li><a href="#">Sub-menu 1.3</a></li>
+        <li><a href="#">Sub-menu 1.4</a></li>
+        <li><a href="#">Sub-menu 1.5</a></li>
+      </ul>
+    </li>
+    <li id="menu2" class="menu">
+      <div class="menu-title"><a href="#" onclick="return false;">Menu 2</a></div>
+      <ul class="submenu">
+        <li><a href="#">Sub-menu 2.1</a></li>
+        <li><a href="#">Sub-menu 2.2</a></li>
+        <li><a href="#">Sub-menu 2.3</a></li>
+        <li><a href="#">Sub-menu 2.4</a></li>
+        <li><a href="#">Sub-menu 2.5</a></li>
+      </ul>
+    </li>
+    <li id="menu3" class="menu">
+      <div class="menu-title"><a href="#" onclick="return false;">Menu 3</a></div>
+      <ul class="submenu">
+        <li><a href="#">Sub-menu 3.1</a></li>
+        <li><a href="#">Sub-menu 3.2</a></li>
+        <li><a href="#">Sub-menu 3.3</a></li>
+        <li><a href="#">Sub-menu 3.4</a></li>
+        <li><a href="#">Sub-menu 3.5</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+```
+
+Ad ogni voce di elenco principale assegniamo un _id_ a cui applicare il metodo _hover_ per eseguire l’effetto desiderato, mentre le classi assegnato le utilizzeremo per specificare le proprietà dello stile css:
+
+```css
+#menu-wrapper {
+  position: absolute;
+  height: 300px;
+  overflow: hidden;
+}
+#menu-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+li.menu {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div.menu-title {
+  width: 200px;
+  height: 33px;
+  margin-right: 20px;
+  background-color: #00689b;
+}
+div.menu-title a {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 33px;
+}
+ul.submenu {
+  position: absolute;
+  width: 200px;
+}
+ul.submenu li {
+  height: 22px;
+  margin-bottom: 1px;
+  background-color: #00689b;
+  line-height: 22px;
+  list-style: none;
+}
+ul.submenu li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+```
+
+Il selettore _menu-wrapper_ raggruppiamo tutto il menu dandogli un’altezza massima e specificando la proprietà _overflow_ per nascondere tutto ciò che è al di fuori di esso.
+
+La classe _menu-title_ specifichiamo le proprietà da assegnare alle voci del menu principale; la classe _submenu_ per le voci dei sub-menu.
+
+<a
+  href="/static/esempi/menu_jquery/index.html"
+  title="Demo menu verticale scorrevole con jQuery"
+  target="_blank"
+>
+  Demo
+</a>
+<a
+  href="/static/esempi/menu_jquery/menu_jquery.zip"
+  title="Codice menu verticale scorrevole con jQuery"
+  target="_blank"
+>
+  Download
+</a>
+
+Spero che ti sia utile, grazie per la lettura non dimenticarti di iscriverti via RSS per tutte le novità sperando di avere più tempo libero e scrivere altri nuovi articoli.

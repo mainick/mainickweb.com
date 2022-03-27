@@ -1,0 +1,125 @@
+---
+title: 'Animazioni con jQuery in un sistema di votazione'
+date: '2011-09-07T07:30:27+01:00'
+status: publish
+permalink: /animazioni-con-jquery-in-un-sistema-di-votazione
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 726
+images: /static/images/posts/animazioni-con-jquery.jpg
+category:
+  - javascript
+  - jQuery
+tag:
+  - 'animazione jquery'
+  - javascript
+  - jQuery
+post_format: []
+---
+
+![](/static/images/posts/animazioni-con-jquery.jpg 'animazioni con jquery')
+
+Ho pensato di utilizzare il [metodo animate() di jQuery](http://api.jquery.com/animate/ 'Perform a custom animation of a set of CSS properties.') per realizzare un sistema di votazione semplice ma bello da vedere.
+
+L’idea è quella di animare un div espandendolo ad ogni voto ricevuto, tramite la funzione animate, aggiungendo un stesso valore alla proprietà di lunghezza del div stesso.
+
+## Documento html
+
+```html
+<div id="container">
+  <span id="question">Quale di questi framework PHP utilizzi?</span>
+  <div><span>0</span><a href="">Vota</a>Zend Framework</div>
+  <div><span>0</span><a href="">Vota</a>Symfony</div>
+  <div><span>0</span><a href="">Vota</a>CakePHP</div>
+  <div><span>0</span><a href="">Vota</a>CodeIgniter</div>
+  <div><span>0</span><a href="">Vota</a>Kohana</div>
+  <div><span>0</span><a href="">Vota</a>YII framework</div>
+</div>
+```
+
+## Foglio di stile CSS
+
+```css
+* {
+  font-family: Arial, 'Free Sans';
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  margin-top: 20px;
+  color: #fff;
+}
+#container #question {
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 40px;
+  color: #333;
+}
+#container div {
+  font-weight: bold;
+  letter-spacing: -3px;
+  background: #c00;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 34px;
+  color: #ffffff;
+  border-left: 20px solid #333;
+  width: 400px;
+}
+#container div a {
+  border: 1px solid #40392c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-decoration: none;
+  color: #0bbfec;
+  padding: 5px 15px;
+  background: #2f2f2f;
+  margin: 0 20px;
+}
+#container div a:hover {
+  color: #fff;
+}
+```
+
+## Effetti con jQuery
+
+Non dimentichiamoci di includere la libreria jQuery nell’intestazione head del documento, poi colleghiamo lo script che permette l’animazione:
+
+```js
+$(document).ready(function () {
+  $('#container div a').click(function () {
+    $(this).parent('div').animate({ width: '+=30px' }, 500)
+    $(this)
+      .prev('span')
+      .html(parseInt($(this).prev().html()) + 1)
+    return false
+  })
+})
+```
+
+Come potete vedere è tutto molto semplice 😉
+
+Associamo una funzione all’evento click sul numero di voti: prendiamo il nodo/oggetto padre del link e sudi esso chiamiamo il metodo animate che genera l’animazione di allungamento in un tempo di 500 millisecondi, dunque incrementiamo il numero di voti.
+
+<a
+  href="/static/esempi/jquery/animazione-jquery.html"
+  title="Demo animazioni con jQuery"
+  target="_blank"
+>
+  Demo
+</a>
+<a
+  href="/static/esempi/jquery/animazione-jquery.zip"
+  title="Download codice animazioni con jQuery"
+  target="_blank"
+>
+  Download
+</a>

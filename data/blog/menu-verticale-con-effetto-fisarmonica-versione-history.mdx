@@ -1,0 +1,218 @@
+---
+title: 'Menu Verticale con Effetto Fisarmonica &#8211; versione history'
+date: '2011-04-22T07:30:30+01:00'
+status: publish
+permalink: /menu-verticale-con-effetto-fisarmonica-versione-history
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 606
+images: /static/images/posts/menu-verticale-jquery.jpg
+category:
+  - javascript
+  - jQuery
+tag:
+  - javascript
+  - jQuery
+post_format: []
+---
+
+![Menu Verticale con jQuery](/static/images/posts/menu-verticale-jquery.jpg 'Menu Verticale con jQuery')
+
+Dopo aver ricevuto abbastanza e-mail e feedback in generale riguardo ad alcune richieste di modifiche, ho deciso di sviluppare una **seconda versione del [menu verticale con effetto a fisarmonica](/blog/menu-verticale-jquery-con-effetto-fisarmonica/ 'Menu Verticale con jQuery')** sperando di soddisfare la maggior parte degli utenti.
+
+In questa seconda versione del tutorial aggiungiamo la possibilità di **aprire l’elenco a tendina tramite un secondo bottone** così da rimanere al link della voce del menu principale la sua funzione predefinita.
+
+## Documento HTML
+
+Quello che andiamo a cambiare alla nostra pagina HTML è l’aggiunta di una **freccia down che avrà la funzione di avviare l’effetto a fisarmonica per visualizzare le voci del sotto menu**:
+
+```html
+<li class="menu">
+  <!-- costituisce ogni sezione del menu principale -->
+  <ul>
+    <!-- titolo della sezione che fa aprire il sotto menu -->
+    <li class="title">
+      <a href="http://www.mainickweb.com/category/firefox/">Categoria Firefox</a>
+      <img src="bullet_arrow_down.png" />
+    </li>
+    <li class="sub-menu sub-menu-open">
+      <ul>
+        <li>
+          <a href="http://www.mainickweb.com/hack-css-per-firefox-opera-safari-e-internet-explorer/"
+            >Articolo 1</a
+          >
+        </li>
+        <li><a href="http://www.mainickweb.com/firefox-3-le-caratteristiche/">Articolo 2</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+```
+
+Aggiungiamo un’altra classe CSS `sub-menu-open` all’elenco del sotto menu per indicare quale di default è **aperto inizialmente** al caricamento della pagina.
+
+## Foglio di stile CSS
+
+Abbiamo modificato le proprietà di alcuni selettori per utilizzare la **freccia come bottone di apertura**, aggiunta la classe per il sotto menu aperto di default e aggiunto il cursore di tipo puntatore quando andiamo sopra all’immagine:
+
+```css
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.container {
+  width: 240px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+li.menu {
+  /* Voci dell'elenco principale */
+  width: 100%;
+  padding: 5px 0;
+}
+
+li.title {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 34px;
+  padding: 10px 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #cc0000;
+}
+
+li.title:hover {
+  background-color: #f40000;
+}
+
+li.title a {
+  /* Voce del menu principale */
+  color: #ffffff;
+  font-family: BPreplay, Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  overflow: hidden;
+}
+
+li.title a:hover {
+  text-decoration: none;
+}
+
+li.title a span {
+  /* Questo span agisce come parte finale della sezione title */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 44px;
+}
+
+li.title img {
+  /* freccia apertura sotto menu */
+  float: right;
+  cursor: pointer;
+}
+
+.sub-menu {
+  /* Sotto menu */
+  display: none;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.sub-menu li {
+  /* Voci del sotto menu */
+  margin: 5px 0;
+  padding: 4px 18px;
+  border: 1px solid #40392c;
+  background-color: #2f2f2f;
+  color: #cccccc;
+}
+
+.sub-menu-open {
+  display: block;
+}
+```
+
+## Effetti con jQuery
+
+Gli script che andremo ad includere nella pagina sono gli stessi, ma bisogna dare uno sguardo allo script che gestisce l’effetto per vedere le modifiche apportate:
+
+```js
+$(document).ready(function () {
+  /* Cambiare l'effetto da utilizzare */
+  $.easing.def = 'easeOutBounce'
+
+  /* Associare una funzione all'evento click sul link */
+  $('li.title img').click(function (e) {
+    /* Trovare l'elenco a discesa che corrisponde al menu cliccato: */
+    var subMenu = $(this).parent().next()
+
+    /* Trovare il sotto menu che corrisponde alla voce cliccata */
+    $('.sub-menu').not(subMenu).slideUp('slow')
+    subMenu.stop(false, true).slideToggle('slow')
+
+    /* Prevenire l'evento predefinito (che sarebbe di seguire il collegamento) */
+    e.preventDefault()
+  })
+})
+```
+
+L’unica modifica effettuata riguarda il **selettore** su cui catturiamo l’evento `click` **per aprire il corrispondente sotto menu**.
+
+## Versione History
+
+Ho deciso di chiamare questo secondo tutorial in questo modo perché un’altra importante richiesta ricevuta è quella di **mantenere il sotto menu aperto** nella pagina raggiunta da un link di uno dei sotto menu.
+
+```php
+<?php $array_label_menu = array('jquery' => '', 'php' => '', 'css' => '', 'firefox' => '') ?>
+<?php $submenu_open = (isset($_GET['menu']) &amp;&amp; $_GET['menu']!='') ? $_GET['menu'] : 'php'; ?>
+<?php $array_label_menu[$submenu_open] = 'sub-menu-open'; ?>
+```
+
+Utilizzando un array indichiamo come chiavi di valori nulli le parole che specificano la nostra voce del menu principale e utilizzando una valore che ci inviamo tramite l’array globale `$_GET` andiamo a inserire la classe CSS `sub-menu-open` come valore alla chiave corrispondete al `$_GET['menu']` inviato.
+
+Adesso vediamo come si modifica la parte riguardo al menu:
+
+```php
+<li class="menu"> <!-- costituisce ogni sezione del menu principale -->
+  <ul>
+    <!-- titolo della sezione che fa aprire il sotto menu -->
+    <li class="title">
+		<a href="http://www.mainickweb.com/category/firefox/?menu=firefox">Categoria Firefox</a>
+		<img src="bullet_arrow_down.png" />
+	</li>
+    <li class="sub-menu <?php echo $array_label_menu['firefox'] ?>">
+      <ul>
+        <li><a href="http://www.mainickweb.com/hack-css-per-firefox-opera-safari-e-internet-explorer/?menu=firefox">Articolo 1</a></li>
+        <li><a href="http://www.mainickweb.com/firefox-3-le-caratteristiche/?menu=firefox">Articolo 2</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+```
+
+<a
+  href="/static/esempi/jquery/menu-verticale-vers-history/menu-verticale.html"
+  title="Demo menu verticale con jQuery versione History"
+  target="_blank"
+>
+  Demo
+</a>
+<a
+  href="/static/esempi/jquery/menu-verticale-vers-history.zip"
+  title="Download codice menu verticale con jQuery versione History"
+  target="_blank"
+>
+  Download
+</a>

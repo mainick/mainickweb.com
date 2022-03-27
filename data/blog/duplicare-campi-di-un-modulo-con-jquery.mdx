@@ -1,0 +1,111 @@
+---
+title: 'Duplicare campi di un modulo con jQuery'
+date: '2010-04-27T08:00:40+01:00'
+status: publish
+permalink: /duplicare-campi-di-un-modulo-con-jquery
+author: 'Maico Orazio'
+excerpt: ''
+type: post
+id: 409
+images: /static/images/posts/multi-recapiti.jpg
+category:
+  - javascript
+  - jQuery
+  - PHP
+tag:
+  - 'duplica campo'
+  - jQuery
+  - 'plugin jquery'
+  - relCopy
+post_format: []
+---
+
+![multi-recapiti.jpg](/static/images/posts/multi-recapiti.jpg)
+
+Avendo bisogno di implementare una rubrica in un progetto ho avuto l’esigenza di memorizzare per ciascun contatto **un numero non precisato** di recapiti.
+
+Per la **duplicazione del campo** recapito ho utilizzato il [plugin jquery relCopy](http://www.andresvidal.com/labs/relcopy.html 'relCopy jQuery Plugin') che copia un qualsiasi elemento, e suoi figli, dal DOM. Questo in realtà è uno strumento relativamente semplice che chiunque sarà in grado di utilizzare. Se avete lavorato con altri tipi di plugin di jQuery, allora non dovrebbe essere troppo difficile per voi. Utilizzare questo tipo di plugin risolve il problema, come nel mio caso, di provvedere manualmente a realizzare il codice per duplicare una certa porzione della nostra pagina.  
+Opzioni del plugin sono:
+
+- **excludeSelector** (_string_): selettore jQuery utilizzato per escludere un elemento ed i suoi figli.
+- **limit** (_integer_): numero di copie permesse \[Default 0: illimitato\].
+- **append** (_string_): HTML da allegare alla fine di ogni copia.
+- **copyClass** (_string_): una classe da associare a ciascuna copia \[Default ‘copy’\].
+- **clearInputs** (_boolean_): opzione per cancellare i valori dei campi input e textarea clonati \[Default true\].
+
+Per utilizzarlo basta chiamare `$('selettore').relCopy({opzioni})` su un qualsiasi elemento del DOM con un selettore di tipo jQuery definito nell’attributo `rel` dell’elemento.
+
+## Documento HTML
+
+Il modulo visualizzato contiene i campi descrittivi del contatto più la possibilità di associarvi quanti recapiti vogliamo:
+
+```html
+<p class="clone"><input type="text" name="recapiti[]" class="input" /></p>
+<p><a href="#" class="add" rel=".clone">Aggiungi recapito</a></p>
+<p><input type="submit" value="Salva" /></p>
+```
+
+Dopo i campi predefiniti per descrivere un contatto abbiamo un paragrafo con un campo di tipo testo. Il paragrafo ha la classe `clone` la stessa utilizzata nell’attributo `rel` del link posto sotto, il quale ha la funzione di clonarlo.
+
+Abbiamo indicato `recapiti[]` nell’attributo `name` del campo del recapito in modo da ottenere un array di tutti i recapiti inseriti nell’array globale `$_POST`: **non mettendo le parentesi quadrate** il modulo invierebbe il valore dell’ultimo recapito aggiunto.
+
+## Script jQuery
+
+Per prima cosa bisogna includere la libreria jQuery (dai server di Google) poi il plugin relCopy ed infine il nostro file di script:
+
+```html
+<script
+  type="text/javascript"
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+></script>
+<script type="text/javascript" src="relCopy.jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+```
+
+Ecco il codice del nostro file di script:
+
+```js
+$(document).ready(function () {
+  // link inserito alla fine dell'elemento clonato che permette di eliminarlo
+  var removeLink =
+    ' <a class="remove" href="#" onclick="$(this).parent().slideUp(function(){ $(this).remove() }); return false">remove</a>'
+
+  // chiamata permette di clonare il paragrafo con all'interno il campo di testo del recapito
+  $('a.add').relCopy({ append: removeLink })
+})
+```
+
+Tramite la chiamata `$('a.add').relCopy({ append: removeLink});` associamo al collegamento la funzione di clonare il recapito. Nell’opzione `append` utilizzata del plugin abbiamo definito un link che tramite un metodo jQuery permette di eliminare il corrispondente elemento clonato.
+
+## Salva contatto in PHP
+
+Il codice che segue scandisce l’array `$_POST['recapiti']` per estrarre i singoli valori inseriti:
+
+```php
+<?php
+if($_POST['recapiti']){
+  $array_recapiti = $_POST['recapiti'];
+  foreach ($array_recapiti as $recapito) {
+    if (strlen($recapito)>0) {
+      //operazioni sul singolo recapito
+      echo $recapito."<br />";
+    }
+  }
+}
+?>
+```
+
+<a
+  href="/static/esempi/jquery/multi-recapiti.html"
+  title="Demo duplicare campi di un modulo con jQuery"
+  target="_blank"
+>
+  Demo
+</a>
+<a
+  href="/static/esempi/jquery/multi-recapiti.zip"
+  title="Download codice duplicare campi con jQuery"
+  target="_blank"
+>
+  Download
+</a>
