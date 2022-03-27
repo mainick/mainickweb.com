@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Wed, 07 Sep 2011 06:30:27 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/animazione-jquery/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/animazioni-con-jquery-in-un-sistema-di-votazione</guid>
+    <title>Animazioni con jQuery in un sistema di votazione</title>
+    <link>https://www.mainickweb.com/blog/animazioni-con-jquery-in-un-sistema-di-votazione</link>
+    undefined
+    
+    <pubDate>Wed, 07 Sep 2011 06:30:27 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>animazione jquery</category><category>javascript</category><category>jQuery</category>
+  </item>
+
+    </channel>
+  </rss>

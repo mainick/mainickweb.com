@@ -1,0 +1,734 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Fri, 11 Dec 2020 08:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/guida-ai-react-hooks</guid>
+    <title>Guida ai React Hooks</title>
+    <link>https://www.mainickweb.com/blog/guida-ai-react-hooks</link>
+    undefined
+    <description>Grazie agli Hooks siamo in grado di usare lo stato nei componenti funzionali stateless e non è più necessario creare un componente di classe per utilizzarlo</description>
+    <pubDate>Fri, 11 Dec 2020 08:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>hook useCallback</category><category>hook useContext</category><category>hook useEffect</category><category>hook useMemo</category><category>hook useReducer</category><category>hook useState</category><category>react</category><category>react hooks</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/favicons-con-immagini-badges-e-video</guid>
+    <title>Come animare favicons con immagini, badges e video</title>
+    <link>https://www.mainickweb.com/blog/favicons-con-immagini-badges-e-video</link>
+    undefined
+    
+    <pubDate>Wed, 25 Sep 2013 06:00:13 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>html5</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/mysql-event-scheduler</guid>
+    <title>MySQL Event Scheduler</title>
+    <link>https://www.mainickweb.com/blog/mysql-event-scheduler</link>
+    undefined
+    
+    <pubDate>Mon, 17 Dec 2012 06:30:12 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>event</category><category>MySQL</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-creare-una-semplice-applicazione-di-geolocalizzazione</guid>
+    <title>Come creare una semplice applicazione di geolocalizzazione</title>
+    <link>https://www.mainickweb.com/blog/come-creare-una-semplice-applicazione-di-geolocalizzazione</link>
+    undefined
+    
+    <pubDate>Mon, 12 Mar 2012 06:30:52 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>html5</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/semplici-espressioni-regolari</guid>
+    <title>Semplici espressioni regolari</title>
+    <link>https://www.mainickweb.com/blog/semplici-espressioni-regolari</link>
+    undefined
+    
+    <pubDate>Mon, 12 Dec 2011 06:30:53 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>regular expressions</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/animazioni-con-jquery-in-un-sistema-di-votazione</guid>
+    <title>Animazioni con jQuery in un sistema di votazione</title>
+    <link>https://www.mainickweb.com/blog/animazioni-con-jquery-in-un-sistema-di-votazione</link>
+    undefined
+    
+    <pubDate>Wed, 07 Sep 2011 06:30:27 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>animazione jquery</category><category>javascript</category><category>jQuery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/applicazioni-web-offline-con-html5</guid>
+    <title>Applicazioni Web Offline con HTML5</title>
+    <link>https://www.mainickweb.com/blog/applicazioni-web-offline-con-html5</link>
+    undefined
+    
+    <pubDate>Mon, 20 Jun 2011 06:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>cache</category><category>cache manifest</category><category>html5</category><category>web application offline</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-rendere-il-database-pi-sicuro</guid>
+    <title>Come rendere il database più sicuro</title>
+    <link>https://www.mainickweb.com/blog/come-rendere-il-database-pi-sicuro</link>
+    undefined
+    
+    <pubDate>Mon, 09 May 2011 06:30:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>mysql</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/menu-verticale-con-effetto-fisarmonica-versione-history</guid>
+    <title>Menu Verticale con Effetto Fisarmonica &amp;#8211; versione history</title>
+    <link>https://www.mainickweb.com/blog/menu-verticale-con-effetto-fisarmonica-versione-history</link>
+    undefined
+    
+    <pubDate>Fri, 22 Apr 2011 06:30:30 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/xdebug-debugging-e-profiling-delle-applicazioni-php</guid>
+    <title>Xdebug: debugging e profiling delle applicazioni PHP</title>
+    <link>https://www.mainickweb.com/blog/xdebug-debugging-e-profiling-delle-applicazioni-php</link>
+    undefined
+    
+    <pubDate>Thu, 17 Feb 2011 15:18:41 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>xdebug</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/rilasciato-jquery-1-5</guid>
+    <title>Rilasciato jQuery 1.5</title>
+    <link>https://www.mainickweb.com/blog/rilasciato-jquery-1-5</link>
+    undefined
+    
+    <pubDate>Tue, 01 Feb 2011 10:26:28 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-contribuire-al-programma-del-codemotion</guid>
+    <title>Come contribuire al programma del Codemotion</title>
+    <link>https://www.mainickweb.com/blog/come-contribuire-al-programma-del-codemotion</link>
+    undefined
+    
+    <pubDate>Sat, 11 Dec 2010 10:09:34 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</guid>
+    <title>Come utilizzare funzioni di callback in PHP</title>
+    <link>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</link>
+    undefined
+    
+    <pubDate>Wed, 24 Nov 2010 06:30:09 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>callback</category><category>PHP</category><category>snippets</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/mod_pagespeed-di-google-per-ottimizzare-automaticamente-la-velocita-del-sito-web</guid>
+    <title>Mod_PageSpeed di Google per ottimizzare automaticamente la velocità del sito Web</title>
+    <link>https://www.mainickweb.com/blog/mod_pagespeed-di-google-per-ottimizzare-automaticamente-la-velocita-del-sito-web</link>
+    undefined
+    
+    <pubDate>Mon, 22 Nov 2010 06:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>apache</category><category>google</category><category>pagespeed</category><category>performance</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/utilizzare-le-viste-in-mysql</guid>
+    <title>Utilizzare le Viste in MySQL</title>
+    <link>https://www.mainickweb.com/blog/utilizzare-le-viste-in-mysql</link>
+    undefined
+    
+    <pubDate>Thu, 05 Aug 2010 06:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>MySQL</category><category>snippets</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/iterazione-foreach-degli-array-in-javascript</guid>
+    <title>Iterazione foreach degli array in JavaScript</title>
+    <link>https://www.mainickweb.com/blog/iterazione-foreach-degli-array-in-javascript</link>
+    undefined
+    
+    <pubDate>Mon, 02 Aug 2010 06:00:25 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>snippets</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/trasformazioni-sui-link-con-css</guid>
+    <title>Trasformazioni sui link con CSS</title>
+    <link>https://www.mainickweb.com/blog/trasformazioni-sui-link-con-css</link>
+    undefined
+    
+    <pubDate>Thu, 15 Jul 2010 06:00:25 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>CSS</category><category>css hack</category><category>css transform</category><category>css transition</category><category>css trasformazioni</category><category>css3</category><category>hover link</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/drop-shadows-con-css3</guid>
+    <title>Drop Shadows con CSS3</title>
+    <link>https://www.mainickweb.com/blog/drop-shadows-con-css3</link>
+    undefined
+    
+    <pubDate>Mon, 12 Jul 2010 06:00:29 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>box-shadow</category><category>CSS</category><category>css ombra</category><category>css trasformazioni</category><category>css3</category><category>drop shadows</category><category>transform</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/nyromodal-finestre-modali-con-jquery</guid>
+    <title>NyroModal: finestre modali con jQuery</title>
+    <link>https://www.mainickweb.com/blog/nyromodal-finestre-modali-con-jquery</link>
+    undefined
+    
+    <pubDate>Thu, 08 Jul 2010 06:00:34 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>finestre modali</category><category>jQuery</category><category>ligthbox</category><category>nyromodal</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/jtwitter-semplice-plugin-jquery-per-le-twitter-api</guid>
+    <title>jTwitter: semplice plugin jQuery per le Twitter API</title>
+    <link>https://www.mainickweb.com/blog/jtwitter-semplice-plugin-jquery-per-le-twitter-api</link>
+    undefined
+    
+    <pubDate>Mon, 05 Jul 2010 07:00:41 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>jtwitter</category><category>twitter</category><category>twitter api</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/rubrica-contatti-in-stile-iphone-con-jquery-e-css</guid>
+    <title>Rubrica contatti in stile iPhone con jQuery e CSS</title>
+    <link>https://www.mainickweb.com/blog/rubrica-contatti-in-stile-iphone-con-jquery-e-css</link>
+    undefined
+    
+    <pubDate>Wed, 02 Jun 2010 07:00:58 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>app contatti iphone</category><category>CSS</category><category>jQuery</category><category>lista contatti</category><category>rubrica contatti</category><category>SliderNav</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/cloud-zoom-image-zoomer-con-jquery</guid>
+    <title>Cloud Zoom: image zoomer con jQuery</title>
+    <link>https://www.mainickweb.com/blog/cloud-zoom-image-zoomer-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 31 May 2010 05:00:40 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>Cloud Zoom</category><category>image zoomer</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/google-font-api</guid>
+    <title>Google Font API</title>
+    <link>https://www.mainickweb.com/blog/google-font-api</link>
+    undefined
+    
+    <pubDate>Thu, 27 May 2010 07:00:52 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>css</category><category>fonts</category><category>google</category><category>google font api</category><category>webfont</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-creare-miniature-di-immagini-con-php-e-la-libreria-gd-2</guid>
+    <title>Come creare miniature di immagini con PHP e la libreria GD</title>
+    <link>https://www.mainickweb.com/blog/come-creare-miniature-di-immagini-con-php-e-la-libreria-gd-2</link>
+    undefined
+    
+    <pubDate>Mon, 10 May 2010 07:00:39 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>immagini</category><category>libreria GD</category><category>PHP</category><category>thumbnails</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/duplicare-campi-di-un-modulo-con-jquery</guid>
+    <title>Duplicare campi di un modulo con jQuery</title>
+    <link>https://www.mainickweb.com/blog/duplicare-campi-di-un-modulo-con-jquery</link>
+    undefined
+    
+    <pubDate>Tue, 27 Apr 2010 07:00:40 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>duplica campo</category><category>jQuery</category><category>plugin jquery</category><category>relCopy</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/menu-verticale-jquery-con-effetto-fisarmonica</guid>
+    <title>Menu verticale jQuery con effetto fisarmonica</title>
+    <link>https://www.mainickweb.com/blog/menu-verticale-jquery-con-effetto-fisarmonica</link>
+    undefined
+    
+    <pubDate>Tue, 20 Apr 2010 07:00:33 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>menu</category><category>menu verticale</category><category>plugin easing</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/twitter-annuncia-user-streams</guid>
+    <title>Twitter annuncia User Streams</title>
+    <link>https://www.mainickweb.com/blog/twitter-annuncia-user-streams</link>
+    undefined
+    
+    <pubDate>Mon, 19 Apr 2010 07:00:19 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>api twitter</category><category>realtime</category><category>twitter</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/evento-symfony-live-2010</guid>
+    <title>Evento Symfony Live 2010</title>
+    <link>https://www.mainickweb.com/blog/evento-symfony-live-2010</link>
+    undefined
+    
+    <pubDate>Tue, 16 Feb 2010 20:05:22 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category><category>PHP</category><category>Symfony</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/utilizzare-piu-istruzioni-sql-prepare-con-php-mysqli</guid>
+    <title>Utilizzare più istruzioni SQL prepare con PHP MySQLi</title>
+    <link>https://www.mainickweb.com/blog/utilizzare-piu-istruzioni-sql-prepare-con-php-mysqli</link>
+    undefined
+    
+    <pubDate>Thu, 11 Feb 2010 07:00:41 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>MySQL</category><category>mysqli</category><category>PHP</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/creare-un-menu-a-lista-in-ordine-alfabetico-con-jquery</guid>
+    <title>Creare un menu a lista in ordine alfabetico con jQuery</title>
+    <link>https://www.mainickweb.com/blog/creare-un-menu-a-lista-in-ordine-alfabetico-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 08 Feb 2010 07:00:07 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/ricerca-in-modo-interattiva-con-jquery</guid>
+    <title>Ricerca in modo interattiva con jQuery</title>
+    <link>https://www.mainickweb.com/blog/ricerca-in-modo-interattiva-con-jquery</link>
+    undefined
+    
+    <pubDate>Wed, 03 Feb 2010 07:00:07 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/colonne-adattabili-a-layout-liquido-con-css-e-jquery</guid>
+    <title>Colonne adattabili a layout liquido con CSS e jQuery</title>
+    <link>https://www.mainickweb.com/blog/colonne-adattabili-a-layout-liquido-con-css-e-jquery</link>
+    undefined
+    
+    <pubDate>Fri, 18 Dec 2009 12:00:31 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>CSS</category><category>jQuery</category><category>layout</category><category>layout liquid</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/creare-una-lista-a-due-colonne-fissa-liquida</guid>
+    <title>Creare una lista a due colonne: fissa + liquida</title>
+    <link>https://www.mainickweb.com/blog/creare-una-lista-a-due-colonne-fissa-liquida</link>
+    undefined
+    
+    <pubDate>Fri, 18 Dec 2009 07:00:44 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/effetto-newsticker-con-jquery</guid>
+    <title>Effetto newsticker con jQuery</title>
+    <link>https://www.mainickweb.com/blog/effetto-newsticker-con-jquery</link>
+    undefined
+    
+    <pubDate>Thu, 17 Dec 2009 09:29:39 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>jQuery</category><category>news a scorrimento</category><category>newsticker</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/crea-tooltip-su-link-e-immagini-in-modo-semplice-con-jquery</guid>
+    <title>Crea tooltip su link e immagini in modo semplice con jQuery</title>
+    <link>https://www.mainickweb.com/blog/crea-tooltip-su-link-e-immagini-in-modo-semplice-con-jquery</link>
+    undefined
+    
+    <pubDate>Wed, 16 Dec 2009 12:00:23 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>plugin jquery</category><category>tooltip</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/jquery-captify-plugin-aggiungere-didascalie-alle-immagini</guid>
+    <title>jQuery Captify Plugin: Aggiungere didascalie alle immagini</title>
+    <link>https://www.mainickweb.com/blog/jquery-captify-plugin-aggiungere-didascalie-alle-immagini</link>
+    undefined
+    
+    <pubDate>Tue, 15 Dec 2009 07:00:06 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/effetto-growl-con-jquery</guid>
+    <title>Effetto Growl con jQuery</title>
+    <link>https://www.mainickweb.com/blog/effetto-growl-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 07 Dec 2009 13:00:49 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>growl</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/sfondo-a-tutto-schermo-con-jquery</guid>
+    <title>Sfondo a tutto schermo con jQuery</title>
+    <link>https://www.mainickweb.com/blog/sfondo-a-tutto-schermo-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 07 Dec 2009 07:00:45 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>galleria immagine</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/crea-una-classifica-mp3-musicale-con-jquery</guid>
+    <title>Crea una classifica mp3 musicale con jQuery</title>
+    <link>https://www.mainickweb.com/blog/crea-una-classifica-mp3-musicale-con-jquery</link>
+    undefined
+    
+    <pubDate>Fri, 09 Oct 2009 07:00:18 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>audio</category><category>jmp3</category><category>jQuery</category><category>mp3</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/semplice-menu-verticale-scorrevole-con-jquery</guid>
+    <title>Semplice menu verticale scorrevole con jQuery</title>
+    <link>https://www.mainickweb.com/blog/semplice-menu-verticale-scorrevole-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 08 Jun 2009 07:00:43 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/felice-natale-a-tutti</guid>
+    <title>Felice Natale a tutti</title>
+    <link>https://www.mainickweb.com/blog/felice-natale-a-tutti</link>
+    undefined
+    
+    <pubDate>Thu, 25 Dec 2008 07:00:38 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category><category>auguri</category><category>natale</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-ottenere-sempre-la-compatibilit-cross-browser</guid>
+    <title>Come ottenere sempre la compatibilità Cross Browser</title>
+    <link>https://www.mainickweb.com/blog/come-ottenere-sempre-la-compatibilit-cross-browser</link>
+    undefined
+    
+    <pubDate>Mon, 01 Dec 2008 06:30:38 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>browser</category><category>cross browser</category><category>CSS</category><category>font</category><category>html</category><category>IE6</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/angoli-arrotondati-con-jquery</guid>
+    <title>Angoli arrotondati con jQuery</title>
+    <link>https://www.mainickweb.com/blog/angoli-arrotondati-con-jquery</link>
+    undefined
+    
+    <pubDate>Mon, 17 Nov 2008 06:30:09 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/google-lancia-voce-e-video-chat-per-gmail</guid>
+    <title>Google lancia voce e video chat per Gmail</title>
+    <link>https://www.mainickweb.com/blog/google-lancia-voce-e-video-chat-per-gmail</link>
+    undefined
+    
+    <pubDate>Thu, 13 Nov 2008 06:30:38 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>webapp</category><category>chat</category><category>gmail</category><category>google</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/conversioni-tra-tipi-di-dati</guid>
+    <title>Conversioni tra tipi di dati</title>
+    <link>https://www.mainickweb.com/blog/conversioni-tra-tipi-di-dati</link>
+    undefined
+    
+    <pubDate>Wed, 12 Nov 2008 12:30:58 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>conversione dati</category><category>conversione tipi</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/debug-primitivo-di-applicazioni-php</guid>
+    <title>Debug primitivo di applicazioni PHP</title>
+    <link>https://www.mainickweb.com/blog/debug-primitivo-di-applicazioni-php</link>
+    undefined
+    
+    <pubDate>Fri, 07 Nov 2008 12:30:15 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>debug</category><category>PHP</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/applicare-css-ad-un-semplice-elenco</guid>
+    <title>Applicare CSS ad un semplice elenco</title>
+    <link>https://www.mainickweb.com/blog/applicare-css-ad-un-semplice-elenco</link>
+    undefined
+    
+    <pubDate>Fri, 07 Nov 2008 06:30:25 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/notazione-heredoc-sistema-per-specificare-stringhe-in-php</guid>
+    <title>Notazione heredoc: sistema per specificare stringhe in php</title>
+    <link>https://www.mainickweb.com/blog/notazione-heredoc-sistema-per-specificare-stringhe-in-php</link>
+    undefined
+    
+    <pubDate>Thu, 06 Nov 2008 06:30:27 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>heredoc</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/gestisci-i-commenti-di-wordpress-dal-desktop</guid>
+    <title>Gestisci i commenti di WordPress dal desktop</title>
+    <link>https://www.mainickweb.com/blog/gestisci-i-commenti-di-wordpress-dal-desktop</link>
+    undefined
+    
+    <pubDate>Mon, 27 Oct 2008 06:30:02 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>adobe</category><category>adobe air</category><category>wordpress</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/gmail-risponde-ai-nostri-contatti</guid>
+    <title>Gmail risponde ai nostri contatti</title>
+    <link>https://www.mainickweb.com/blog/gmail-risponde-ai-nostri-contatti</link>
+    undefined
+    
+    <pubDate>Wed, 22 Oct 2008 16:09:14 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>webapp</category><category>gmail</category><category>google lab</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/visualizzare-propri-font-nelle-pagine-web</guid>
+    <title>Visualizzare propri font nelle pagine web</title>
+    <link>https://www.mainickweb.com/blog/visualizzare-propri-font-nelle-pagine-web</link>
+    undefined
+    
+    <pubDate>Fri, 17 Oct 2008 06:30:45 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category><category>font</category><category>font-face</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/hack-css-per-firefox-opera-safari-e-internet-explorer</guid>
+    <title>Hack CSS per Firefox, Opera, Safari e Internet Explorer</title>
+    <link>https://www.mainickweb.com/blog/hack-css-per-firefox-opera-safari-e-internet-explorer</link>
+    undefined
+    
+    <pubDate>Thu, 16 Oct 2008 13:00:14 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>browser</category><category>CSS</category><category>css hacks</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/fixare-il-problema-dell-overflow-orizzontale-ie</guid>
+    <title>Fixare il problema dell overflow orizzontale IE</title>
+    <link>https://www.mainickweb.com/blog/fixare-il-problema-dell-overflow-orizzontale-ie</link>
+    undefined
+    
+    <pubDate>Thu, 16 Oct 2008 06:30:53 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>css</category><category>overflow</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/validare-form-con-livevalidation</guid>
+    <title>Validare form con LiveValidation</title>
+    <link>https://www.mainickweb.com/blog/validare-form-con-livevalidation</link>
+    undefined
+    
+    <pubDate>Wed, 15 Oct 2008 14:17:49 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>form</category><category>validazione</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/arricchisci-il-tuo-sito-widget-per-migliorare-l-aspetto</guid>
+    <title>Arricchisci il tuo sito: widget per migliorare l aspetto</title>
+    <link>https://www.mainickweb.com/blog/arricchisci-il-tuo-sito-widget-per-migliorare-l-aspetto</link>
+    undefined
+    
+    <pubDate>Fri, 05 Sep 2008 10:34:30 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>widgets</category><category>webapp</category><category>favicon</category><category>ribbon</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/jquery-multimedia-portfolio-galleria-di-file-multimediali</guid>
+    <title>jQuery Multimedia portfolio: galleria di file multimediali</title>
+    <link>https://www.mainickweb.com/blog/jquery-multimedia-portfolio-galleria-di-file-multimediali</link>
+    undefined
+    
+    <pubDate>Sun, 20 Jul 2008 21:11:37 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jquery</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/semplice-menu-verticale-con-effetto-fisarmonica-via-javascript</guid>
+    <title>Semplice menu verticale con effetto fisarmonica via JavaScript!</title>
+    <link>https://www.mainickweb.com/blog/semplice-menu-verticale-con-effetto-fisarmonica-via-javascript</link>
+    undefined
+    
+    <pubDate>Sun, 13 Jul 2008 16:50:50 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>accordions</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/lightbox-plugin-con-jquery</guid>
+    <title>Lightbox plugin con jQuery</title>
+    <link>https://www.mainickweb.com/blog/lightbox-plugin-con-jquery</link>
+    undefined
+    
+    <pubDate>Tue, 01 Jul 2008 19:44:15 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>lightbox</category><category>plugin jquery</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/firefox-3-le-caratteristiche</guid>
+    <title>Firefox 3: le caratteristiche</title>
+    <link>https://www.mainickweb.com/blog/firefox-3-le-caratteristiche</link>
+    undefined
+    
+    <pubDate>Sun, 29 Jun 2008 20:32:44 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>browser</category><category>Firefox</category><category>mozilla</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/il-mio-primo-blog</guid>
+    <title>Il mio primo blog</title>
+    <link>https://www.mainickweb.com/blog/il-mio-primo-blog</link>
+    undefined
+    
+    <pubDate>Sun, 29 Jun 2008 18:53:21 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category><category>presentazione blog</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Mon, 22 Nov 2010 06:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/performance/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/mod_pagespeed-di-google-per-ottimizzare-automaticamente-la-velocita-del-sito-web</guid>
+    <title>Mod_PageSpeed di Google per ottimizzare automaticamente la velocità del sito Web</title>
+    <link>https://www.mainickweb.com/blog/mod_pagespeed-di-google-per-ottimizzare-automaticamente-la-velocita-del-sito-web</link>
+    undefined
+    
+    <pubDate>Mon, 22 Nov 2010 06:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>apache</category><category>google</category><category>pagespeed</category><category>performance</category>
+  </item>
+
+    </channel>
+  </rss>

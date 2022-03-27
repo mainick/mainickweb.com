@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Tue, 16 Feb 2010 20:05:22 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/symfony/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/evento-symfony-live-2010</guid>
+    <title>Evento Symfony Live 2010</title>
+    <link>https://www.mainickweb.com/blog/evento-symfony-live-2010</link>
+    undefined
+    
+    <pubDate>Tue, 16 Feb 2010 20:05:22 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category><category>PHP</category><category>Symfony</category>
+  </item>
+
+    </channel>
+  </rss>

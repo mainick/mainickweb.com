@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Mon, 05 Jul 2010 07:00:41 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/jtwitter/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/jtwitter-semplice-plugin-jquery-per-le-twitter-api</guid>
+    <title>jTwitter: semplice plugin jQuery per le Twitter API</title>
+    <link>https://www.mainickweb.com/blog/jtwitter-semplice-plugin-jquery-per-le-twitter-api</link>
+    undefined
+    
+    <pubDate>Mon, 05 Jul 2010 07:00:41 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>jQuery</category><category>jtwitter</category><category>twitter</category><category>twitter api</category>
+  </item>
+
+    </channel>
+  </rss>

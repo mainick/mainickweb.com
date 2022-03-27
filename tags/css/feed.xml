@@ -1,0 +1,146 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Thu, 15 Jul 2010 06:00:25 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/css/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/trasformazioni-sui-link-con-css</guid>
+    <title>Trasformazioni sui link con CSS</title>
+    <link>https://www.mainickweb.com/blog/trasformazioni-sui-link-con-css</link>
+    undefined
+    
+    <pubDate>Thu, 15 Jul 2010 06:00:25 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>CSS</category><category>css hack</category><category>css transform</category><category>css transition</category><category>css trasformazioni</category><category>css3</category><category>hover link</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/drop-shadows-con-css3</guid>
+    <title>Drop Shadows con CSS3</title>
+    <link>https://www.mainickweb.com/blog/drop-shadows-con-css3</link>
+    undefined
+    
+    <pubDate>Mon, 12 Jul 2010 06:00:29 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>snippets</category><category>box-shadow</category><category>CSS</category><category>css ombra</category><category>css trasformazioni</category><category>css3</category><category>drop shadows</category><category>transform</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/rubrica-contatti-in-stile-iphone-con-jquery-e-css</guid>
+    <title>Rubrica contatti in stile iPhone con jQuery e CSS</title>
+    <link>https://www.mainickweb.com/blog/rubrica-contatti-in-stile-iphone-con-jquery-e-css</link>
+    undefined
+    
+    <pubDate>Wed, 02 Jun 2010 07:00:58 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>app contatti iphone</category><category>CSS</category><category>jQuery</category><category>lista contatti</category><category>rubrica contatti</category><category>SliderNav</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/google-font-api</guid>
+    <title>Google Font API</title>
+    <link>https://www.mainickweb.com/blog/google-font-api</link>
+    undefined
+    
+    <pubDate>Thu, 27 May 2010 07:00:52 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>css</category><category>fonts</category><category>google</category><category>google font api</category><category>webfont</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/colonne-adattabili-a-layout-liquido-con-css-e-jquery</guid>
+    <title>Colonne adattabili a layout liquido con CSS e jQuery</title>
+    <link>https://www.mainickweb.com/blog/colonne-adattabili-a-layout-liquido-con-css-e-jquery</link>
+    undefined
+    
+    <pubDate>Fri, 18 Dec 2009 12:00:31 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>CSS</category><category>jQuery</category><category>layout</category><category>layout liquid</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/creare-una-lista-a-due-colonne-fissa-liquida</guid>
+    <title>Creare una lista a due colonne: fissa + liquida</title>
+    <link>https://www.mainickweb.com/blog/creare-una-lista-a-due-colonne-fissa-liquida</link>
+    undefined
+    
+    <pubDate>Fri, 18 Dec 2009 07:00:44 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-ottenere-sempre-la-compatibilit-cross-browser</guid>
+    <title>Come ottenere sempre la compatibilità Cross Browser</title>
+    <link>https://www.mainickweb.com/blog/come-ottenere-sempre-la-compatibilit-cross-browser</link>
+    undefined
+    
+    <pubDate>Mon, 01 Dec 2008 06:30:38 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>browser</category><category>cross browser</category><category>CSS</category><category>font</category><category>html</category><category>IE6</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/applicare-css-ad-un-semplice-elenco</guid>
+    <title>Applicare CSS ad un semplice elenco</title>
+    <link>https://www.mainickweb.com/blog/applicare-css-ad-un-semplice-elenco</link>
+    undefined
+    
+    <pubDate>Fri, 07 Nov 2008 06:30:25 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/visualizzare-propri-font-nelle-pagine-web</guid>
+    <title>Visualizzare propri font nelle pagine web</title>
+    <link>https://www.mainickweb.com/blog/visualizzare-propri-font-nelle-pagine-web</link>
+    undefined
+    
+    <pubDate>Fri, 17 Oct 2008 06:30:45 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>CSS</category><category>font</category><category>font-face</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/hack-css-per-firefox-opera-safari-e-internet-explorer</guid>
+    <title>Hack CSS per Firefox, Opera, Safari e Internet Explorer</title>
+    <link>https://www.mainickweb.com/blog/hack-css-per-firefox-opera-safari-e-internet-explorer</link>
+    undefined
+    
+    <pubDate>Thu, 16 Oct 2008 13:00:14 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>browser</category><category>CSS</category><category>css hacks</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/fixare-il-problema-dell-overflow-orizzontale-ie</guid>
+    <title>Fixare il problema dell overflow orizzontale IE</title>
+    <link>https://www.mainickweb.com/blog/fixare-il-problema-dell-overflow-orizzontale-ie</link>
+    undefined
+    
+    <pubDate>Thu, 16 Oct 2008 06:30:53 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>css</category><category>overflow</category><category>plugin jquery</category>
+  </item>
+
+    </channel>
+  </rss>

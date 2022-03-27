@@ -1,0 +1,38 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Thu, 13 Nov 2008 06:30:38 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/gmail/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/google-lancia-voce-e-video-chat-per-gmail</guid>
+    <title>Google lancia voce e video chat per Gmail</title>
+    <link>https://www.mainickweb.com/blog/google-lancia-voce-e-video-chat-per-gmail</link>
+    undefined
+    
+    <pubDate>Thu, 13 Nov 2008 06:30:38 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>webapp</category><category>chat</category><category>gmail</category><category>google</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/gmail-risponde-ai-nostri-contatti</guid>
+    <title>Gmail risponde ai nostri contatti</title>
+    <link>https://www.mainickweb.com/blog/gmail-risponde-ai-nostri-contatti</link>
+    undefined
+    
+    <pubDate>Wed, 22 Oct 2008 16:09:14 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>webapp</category><category>gmail</category><category>google lab</category>
+  </item>
+
+    </channel>
+  </rss>

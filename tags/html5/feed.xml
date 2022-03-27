@@ -1,0 +1,50 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Wed, 25 Sep 2013 06:00:13 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/html5/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/favicons-con-immagini-badges-e-video</guid>
+    <title>Come animare favicons con immagini, badges e video</title>
+    <link>https://www.mainickweb.com/blog/favicons-con-immagini-badges-e-video</link>
+    undefined
+    
+    <pubDate>Wed, 25 Sep 2013 06:00:13 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>html5</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-creare-una-semplice-applicazione-di-geolocalizzazione</guid>
+    <title>Come creare una semplice applicazione di geolocalizzazione</title>
+    <link>https://www.mainickweb.com/blog/come-creare-una-semplice-applicazione-di-geolocalizzazione</link>
+    undefined
+    
+    <pubDate>Mon, 12 Mar 2012 06:30:52 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>javascript</category><category>html5</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/applicazioni-web-offline-con-html5</guid>
+    <title>Applicazioni Web Offline con HTML5</title>
+    <link>https://www.mainickweb.com/blog/applicazioni-web-offline-con-html5</link>
+    undefined
+    
+    <pubDate>Mon, 20 Jun 2011 06:00:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>cache</category><category>cache manifest</category><category>html5</category><category>web application offline</category>
+  </item>
+
+    </channel>
+  </rss>

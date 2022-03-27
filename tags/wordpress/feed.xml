@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Mon, 27 Oct 2008 06:30:02 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/wordpress/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/gestisci-i-commenti-di-wordpress-dal-desktop</guid>
+    <title>Gestisci i commenti di WordPress dal desktop</title>
+    <link>https://www.mainickweb.com/blog/gestisci-i-commenti-di-wordpress-dal-desktop</link>
+    undefined
+    
+    <pubDate>Mon, 27 Oct 2008 06:30:02 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>adobe</category><category>adobe air</category><category>wordpress</category>
+  </item>
+
+    </channel>
+  </rss>

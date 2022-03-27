@@ -1,0 +1,110 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Mon, 09 May 2011 06:30:00 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/php/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-rendere-il-database-pi-sicuro</guid>
+    <title>Come rendere il database più sicuro</title>
+    <link>https://www.mainickweb.com/blog/come-rendere-il-database-pi-sicuro</link>
+    undefined
+    
+    <pubDate>Mon, 09 May 2011 06:30:00 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>mysql</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</guid>
+    <title>Come utilizzare funzioni di callback in PHP</title>
+    <link>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</link>
+    undefined
+    
+    <pubDate>Wed, 24 Nov 2010 06:30:09 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>callback</category><category>PHP</category><category>snippets</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-creare-miniature-di-immagini-con-php-e-la-libreria-gd-2</guid>
+    <title>Come creare miniature di immagini con PHP e la libreria GD</title>
+    <link>https://www.mainickweb.com/blog/come-creare-miniature-di-immagini-con-php-e-la-libreria-gd-2</link>
+    undefined
+    
+    <pubDate>Mon, 10 May 2010 07:00:39 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>immagini</category><category>libreria GD</category><category>PHP</category><category>thumbnails</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/evento-symfony-live-2010</guid>
+    <title>Evento Symfony Live 2010</title>
+    <link>https://www.mainickweb.com/blog/evento-symfony-live-2010</link>
+    undefined
+    
+    <pubDate>Tue, 16 Feb 2010 20:05:22 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>eventi</category><category>PHP</category><category>Symfony</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/utilizzare-piu-istruzioni-sql-prepare-con-php-mysqli</guid>
+    <title>Utilizzare più istruzioni SQL prepare con PHP MySQLi</title>
+    <link>https://www.mainickweb.com/blog/utilizzare-piu-istruzioni-sql-prepare-con-php-mysqli</link>
+    undefined
+    
+    <pubDate>Thu, 11 Feb 2010 07:00:41 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>MySQL</category><category>mysqli</category><category>PHP</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/conversioni-tra-tipi-di-dati</guid>
+    <title>Conversioni tra tipi di dati</title>
+    <link>https://www.mainickweb.com/blog/conversioni-tra-tipi-di-dati</link>
+    undefined
+    
+    <pubDate>Wed, 12 Nov 2008 12:30:58 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>conversione dati</category><category>conversione tipi</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/debug-primitivo-di-applicazioni-php</guid>
+    <title>Debug primitivo di applicazioni PHP</title>
+    <link>https://www.mainickweb.com/blog/debug-primitivo-di-applicazioni-php</link>
+    undefined
+    
+    <pubDate>Fri, 07 Nov 2008 12:30:15 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>debug</category><category>PHP</category>
+  </item>
+
+  <item>
+    <guid>https://www.mainickweb.com/blog/notazione-heredoc-sistema-per-specificare-stringhe-in-php</guid>
+    <title>Notazione heredoc: sistema per specificare stringhe in php</title>
+    <link>https://www.mainickweb.com/blog/notazione-heredoc-sistema-per-specificare-stringhe-in-php</link>
+    undefined
+    
+    <pubDate>Thu, 06 Nov 2008 06:30:27 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>php</category><category>heredoc</category>
+  </item>
+
+    </channel>
+  </rss>

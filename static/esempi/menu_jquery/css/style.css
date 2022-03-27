@@ -1,0 +1,101 @@
+/* -----------------------------------------------------------------------
+
+   CSS Menu Verticale Scorrevole
+   
+   Maico Orazio
+   mainickweb@gmail.com
+   Copyright 2009 MaiNickWeb.com
+
+----------------------------------------------------------------------- */
+
+/**************************************/
+/*              GLOBALS               */
+/**************************************/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-size: 12px;
+}
+
+/**************************************/
+/*             NAVIGATION             */
+/**************************************/
+#menu-wrapper {
+  position: absolute;
+  height: 300px;
+  overflow: hidden;
+}
+#menu-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+li.menu {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div.menu-title {
+  width: 200px;
+  height: 33px;
+  margin-right: 20px;
+  background-color: #00689b;
+}
+div.menu-title a {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 33px;
+}
+ul.submenu {
+  position: absolute;
+  width: 200px;
+}
+ul.submenu li {
+  height: 22px;
+  margin-bottom: 1px;
+  background-color: #00689b;
+  line-height: 22px;
+  list-style: none;
+}
+ul.submenu li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/**************************************/
+/*               FOOTOR               */
+/**************************************/
+#footer {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+#copyright {
+  width: 837px;
+  margin: 0 auto;
+  color: #ababab;
+}
+#copyright a {
+  color: #84c50e;
+  text-decoration: none;
+}
+#copyright a:hover {
+  text-decoration: underline;
+}

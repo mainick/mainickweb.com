@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Wed, 24 Nov 2010 06:30:09 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/callback/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</guid>
+    <title>Come utilizzare funzioni di callback in PHP</title>
+    <link>https://www.mainickweb.com/blog/come-utilizzare-funzioni-di-callback-in-php</link>
+    undefined
+    
+    <pubDate>Wed, 24 Nov 2010 06:30:09 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>callback</category><category>PHP</category><category>snippets</category>
+  </item>
+
+    </channel>
+  </rss>

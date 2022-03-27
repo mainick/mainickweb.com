@@ -1,0 +1,26 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MaiNick Web</title>
+      <link>https://www.mainickweb.com/blog</link>
+      <description>MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale</description>
+      <language>it</language>
+      <managingEditor>maico.orazio@gmail.com (Maico Orazio)</managingEditor>
+      <webMaster>maico.orazio@gmail.com (Maico Orazio)</webMaster>
+      <lastBuildDate>Thu, 17 Dec 2009 09:29:39 GMT</lastBuildDate>
+      <atom:link href="https://www.mainickweb.com/tags/newsticker/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.mainickweb.com/blog/effetto-newsticker-con-jquery</guid>
+    <title>Effetto newsticker con jQuery</title>
+    <link>https://www.mainickweb.com/blog/effetto-newsticker-con-jquery</link>
+    undefined
+    
+    <pubDate>Thu, 17 Dec 2009 09:29:39 GMT</pubDate>
+    <author>maico.orazio@gmail.com (Maico Orazio)</author>
+    undefined
+    <category>jQuery</category><category>news a scorrimento</category><category>newsticker</category><category>plugin jquery</category>
+  </item>
+
+    </channel>
+  </rss>
