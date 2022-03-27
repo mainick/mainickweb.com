@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 export default function Tags({ tags }) {
   const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
-  const popularTags = sortedTags.filter((tag) => tags[tag] && tags[tag] > 1)
+  const popularTags = sortedTags.filter((tag) => tags[tag] && tags[tag] > 2)
   return (
     <>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />

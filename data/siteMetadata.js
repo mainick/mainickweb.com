@@ -5,7 +5,7 @@ const siteMetadata = {
   description:
     'MaiNick Web - Il blog di Maico Orazio | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale',
   description_excerpt:
-    'Benvenuto nel mio blog. Questo blog funge per me da luogo dove condividere codice e pensieri.' +
+    'Benvenuto nel mio blog. Questo blog funge per me da luogo dove condividere codice e pensieri. ' +
     'Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale. Buona lettura 🍻',
   language: 'it',
   theme: 'system', // system, dark or light
