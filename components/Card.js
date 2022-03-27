@@ -1,3 +1,4 @@
+import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
@@ -10,7 +11,7 @@ const Card = ({ title, description, imgSrc, href }) => (
       {imgSrc &&
         (href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
-            <img
+            <Image
               alt={title}
               src={imgSrc}
               className="object-cover object-center md:h-36 lg:h-48"
@@ -19,7 +20,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             />
           </Link>
         ) : (
-          <img
+          <Image
             alt={title}
             src={imgSrc}
             className="object-cover object-center md:h-36 lg:h-48"
@@ -44,7 +45,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Scopri di pi&ugrave; &rarr;
+            Learn more &rarr;
           </Link>
         )}
       </div>
