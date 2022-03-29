@@ -1,0 +1,157 @@
+body,
+h1,
+h2,
+h3,
+p,
+quote,
+small,
+form,
+input,
+ul,
+li,
+ol,
+label {
+  /* Semplice reset */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #191919;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.container {
+  width: 240px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+li.menu {
+  /* Voci dell'elenco principale */
+  width: 100%;
+  padding: 5px 0;
+}
+
+li.title {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 34px;
+  padding: 10px 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #cc0000;
+}
+
+li.title:hover {
+  background-color: #f40000;
+}
+
+li.title a {
+  /* Voce del menu principale */
+  color: #ffffff;
+  font-family: BPreplay, Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  overflow: hidden;
+}
+
+li.title a:hover {
+  text-decoration: none;
+}
+
+li.title a span {
+  /* Questo span agisce come parte finale della sezione title */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 44px;
+}
+
+li.title img {
+  /* freccia apertura sotto menu */
+  float: right;
+  cursor: pointer;
+}
+
+.sub-menu {
+  /* Sotto menu */
+  display: none;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.sub-menu li {
+  /* Voci del sotto menu */
+  margin: 5px 0;
+  padding: 4px 18px;
+  border: 1px solid #40392c;
+  background-color: #2f2f2f;
+  color: #cccccc;
+}
+
+.sub-menu-open {
+  display: block;
+}
+
+/* Stile della pagina demo */
+
+h1 {
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+h2 {
+  top: 15px;
+  right: 0;
+  padding-right: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.clear {
+  clear: both;
+}
+
+#main {
+  position: relative;
+  width: 920px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: #0bbfec;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  padding: 10px;
+  text-align: center;
+}

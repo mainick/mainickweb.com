@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animazioni con jQuery in un sistema di votazione</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#container div a").click(function() {
+        $(this).parent("div").animate({
+           width: '+=30px'
+        }, 500);
+
+        $(this).prev("span").html(parseInt($(this).prev().html()) + 1);
+        return false;
+    });
+});
+</script>
+<style type="text/css">
+    * {
+        font-family: Arial, "Free Sans";
+    }
+	body {
+	    margin: 0;
+	    padding: 0;
+    }
+    #container {
+        margin-top: 20px;
+        color: #fff;
+    }
+    #container #question {
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        letter-spacing: -3px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 40px;
+		color: #333;
+    }
+    #container div {
+        font-weight: bold;
+        letter-spacing: -3px;
+        background: #c00;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 34px;
+        color: #ffffff;
+        border-left: 20px solid #333;
+        width: 400px;
+    }
+    #container div a {
+		border: 1px solid #40392C;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        text-decoration: none;
+        color: #0BBFEC;
+        padding: 5px 15px;
+        background: #2F2F2F;
+        margin: 0 20px;
+    }
+    #container div a:hover {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+  <div id="container">
+    <span id="question">Quale di questi framework PHP utilizzi?</span>
+    <div><span>0</span><a href="">Vota</a>Zend Framework</div>
+    <div><span>0</span><a href="">Vota</a>Symfony</div>
+    <div><span>0</span><a href="">Vota</a>CakePHP</div>
+    <div><span>0</span><a href="">Vota</a>CodeIgniter</div>
+    <div><span>0</span><a href="">Vota</a>Kohana</div>
+    <div><span>0</span><a href="">Vota</a>YII framework</div>
+  </div>
+</body>
+</html>
