@@ -27,6 +27,7 @@ export default function Home({ posts }) {
               src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
               width="30px"
               className="m-0 inline"
+              alt="hey"
             />
             , sono Maico
           </h1>
