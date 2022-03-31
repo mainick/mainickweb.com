@@ -37,19 +37,7 @@ jobs:
 
     - run: npm ci
     - run: npm run build
-      env:
-        NEXT_PUBLIC_BASE_PATH: /mainickweb.com
-        NEXT_PUBLIC_GISCUS_REPO: mainick/mainickweb.com
-        NEXT_PUBLIC_GISCUS_REPOSITORY_ID: R_kgDOG5AHkg
-        NEXT_PUBLIC_GISCUS_CATEGORY: Announcements
-        NEXT_PUBLIC_GISCUS_CATEGORY_ID: DIC_kwDOG5AHks4CBSft
     - run: npm run export
-      env:
-        NEXT_PUBLIC_BASE_PATH: /mainickweb.com
-        NEXT_PUBLIC_GISCUS_REPO: mainick/mainickweb.com
-        NEXT_PUBLIC_GISCUS_REPOSITORY_ID: R_kgDOG5AHkg
-        NEXT_PUBLIC_GISCUS_CATEGORY: Announcements
-        NEXT_PUBLIC_GISCUS_CATEGORY_ID: DIC_kwDOG5AHks4CBSft
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
