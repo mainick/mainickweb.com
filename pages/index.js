@@ -39,7 +39,7 @@ export default function Home({ posts }) {
           </h2>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
+          {!posts.length && 'Nessun articolo trovato.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, excerpt, tags, tag } = frontMatter
             return (
