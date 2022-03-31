@@ -2,6 +2,24 @@
 ErrorDocument 404 /404.html
 
 //301 Redirect Old File
+Redirect 301 /contattami /about
+Redirect 301 /contattami/ /about
+Redirect 301 /page/2/ /blog/page/2
+Redirect 301 /page/3/ /blog/page/3
+Redirect 301 /page/4/ /blog/page/4
+Redirect 301 /category/php/ /tags/php
+Redirect 301 /category/react/ /tags/react
+Redirect 301 /category/javascript/ /tags/javascript
+Redirect 301 /category/jquery/ /tags/jquery
+Redirect 301 /category/css/ /tags/css
+Redirect 301 /category/snippets/ /tags/snippets
+Redirect 301 /category/eventi/ /tags/eventi
+Redirect 301 /category/mysql/ /tags/mysql
+Redirect 301 /category/hmtl5/ /tags/html5
+Redirect 301 /category/applicazioni-online/ /tags/webapp
+Redirect 301 /tag/plugin-jquery/ /tags/plugin-jquery
+Redirect 301 /tag/google/ /tags/google
+Redirect 301 /tag/browser/ /tags/browser
 Redirect 301 /il-mio-primo-blog /blog/il-mio-primo-blog
 Redirect 301 /firefox-3-le-caratteristiche /blog/firefox-3-le-caratteristiche
 Redirect 301 /lightbox-plugin-con-jquery /blog/lightbox-plugin-con-jquery
