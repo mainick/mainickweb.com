@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, tags }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -31,7 +31,7 @@ const Card = ({ title, description, imgSrc, href }) => (
       <div className="p-6">
         <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
           {href ? (
-            <Link href={href} aria-label={`Link to ${title}`}>
+            <Link href={href} aria-label={`Link a ${title}`}>
               {title}
             </Link>
           ) : (
@@ -47,6 +47,13 @@ const Card = ({ title, description, imgSrc, href }) => (
           >
             Scopri di pi&ugrave; &rarr;
           </Link>
+        )}
+        {tags && (
+          <div className="mt-3 flex flex-row justify-between">
+            <div className="text-base font-medium font-extralight leading-6 text-gray-500 dark:hover:text-gray-400">
+              {tags && tags.map((tag) => tag + ' • ')}
+            </div>
+          </div>
         )}
       </div>
     </div>
