@@ -15,6 +15,7 @@ const siteMetadata = {
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/avatar.png',
   email: 'maico.orazio@gmail.com',
+  twitter_nickname: '@mainick',
   github: 'https://github.com/mainick',
   twitter: 'http://twitter.com/mainick',
   facebook: 'http://www.facebook.com/maico.orazio',

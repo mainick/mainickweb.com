@@ -21,10 +21,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
         <meta property="og:image" content={ogImage} key={ogImage} />
       )}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twImage} />
+      <meta name="twitter:site" content={siteMetadata.twitter_nickname} />
+      <meta name="twitter:creator" content={siteMetadata.twitter_nickname} />
+      {/*<meta name="twitter:title" content={title} />*/}
+      {/*<meta name="twitter:description" content={description} />*/}
+      {/*<meta name="twitter:image" content={twImage} />*/}
       <link
         rel="canonical"
         href={
@@ -61,7 +62,7 @@ export const TagSEO = ({ title, description }) => {
       <CommonSEO
         title={title}
         description={description}
-        ogType="website"
+        ogType="article"
         ogImage={ogImageUrl}
         twImage={twImageUrl}
       />
@@ -147,7 +148,7 @@ export const BlogSEO = ({
   return (
     <>
       <CommonSEO
-        title={title}
+        title={`${title} - ${siteMetadata.title}`}
         description={excerpt}
         ogType="article"
         ogImage={featuredImages}
