@@ -9,5 +9,7 @@ export async function getStaticProps() {
 export default function Privacy({ policyDetails }) {
   const { mdxSource, frontMatter } = policyDetails
 
-  return <MDXLayoutRenderer layout="PostSimple" mdxSource={mdxSource} frontMatter={frontMatter} />
+  return (
+    <MDXLayoutRenderer layout="PageFullSimple" mdxSource={mdxSource} frontMatter={frontMatter} />
+  )
 }
