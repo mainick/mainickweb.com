@@ -76,3 +76,4 @@ Redirect 301 /come-creare-una-semplice-applicazione-di-geolocalizzazione /blog/c
 Redirect 301 /mysql-event-scheduler /blog/mysql-event-scheduler
 Redirect 301 /favicons-con-immagini-badges-e-video /blog/favicons-con-immagini-badges-e-video
 Redirect 301 /guida-ai-react-hooks /blog/guida-ai-react-hooks
+Redirect 301 /tag/hook-useeffect/ /tags/hook-useeffect
