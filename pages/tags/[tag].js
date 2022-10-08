@@ -41,8 +41,11 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Tag({ posts, tag }) {
-  // Capitalize first letter and convert space to dash
-  const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
+  // Capitalize first letter of Each word and convert dash to space
+  const title = tag
+    .split('-')
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(' ')
   return (
     <>
       <TagSEO title={`${tag} - ${siteMetadata.title}`} description={`${tag} tags`} />
