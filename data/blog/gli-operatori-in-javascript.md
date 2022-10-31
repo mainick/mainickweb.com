@@ -122,4 +122,52 @@ export function AwesomeComponent({numOfViews}) {
 L'operatore di coalescenza nullo non considera altri valori falsi oltre a `null`
 e `undefined`.
 
+## Operatore ternario
+
+L'operatore ternario è l'unico operatore in JavaScript che accetta tre argomenti.
+È un'alternativa più breve all'istruzione `if-else`.
+La sintatti è la seguente:
+
+```text
+conditional_to_evaluate
+  ? expression_if_condition_is_true
+  : expression_if_condition_is_false
+```
+
+La prima espressione è la condizione da valutare, che dovrebbe restituire `true` o `false`.
+La seconda espressione è il codice che viene eseguito se la condizione è `true`.
+Infine, l'espressione a destra dei due punti rappresenta il codice da eseguire se
+la condizione restituisce `false`.
+
+Di seguito un esempio di istruzione `if-else` convertita con l'operatore ternario
+
+```javascript
+let age = 35
+
+if (age <= 18) {
+  console.log('tu sei maggiorenne')
+} else {
+  console.log('tu sei minorenne')
+}
+
+age <= 18 ? console.log('tu sei maggiorenne') : console.log('tu sei minorenne')
+```
+
+L'operatore ternario ha una sintassi più chiara e più breve rispetto
+all'istruzione `if-else`, ma non è consigliabile sostituirlo a un
+`if-else` nidificato, in questo caso è meglio utilizzare l'istruzione
+`if-else` o `switch`.
+
+In [React](https://www.mainickweb.com/tags/react), l'operatore ternario può
+essere utilizzato per eseguire il rendering condizionale dei componenti a
+seconda che una condizione sia soddisfatta o meno.
+
+```javascript
+userLoggedIn ? <UserDashboard /> : <Login />
+```
+
+Nell'esempio sopra, utilizziamo l'operatore ternario per eseguire il
+rendering del componente `UserDashboard` se l'utente ha effettuato l'accesso;
+altrimenti, eseguiamo il rendering del componente `Login`.
+
 > Buona lavoro 👨‍💻
