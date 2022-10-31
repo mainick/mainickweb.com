@@ -7,7 +7,7 @@ author: 'Maico Orazio'
 excerpt: 'Grazie agli Hooks siamo in grado di usare lo stato nei componenti funzionali stateless e non è più necessario creare un componente di classe per utilizzarlo'
 type: post
 id: 824
-images: /static/images/posts/react_hooks_img_2.png
+images: /static/images/posts/react_hooks_img_2.webp
 category:
   - javascript
   - React
@@ -32,6 +32,8 @@ _yoast_wpseo_metadesc:
 _yoast_wpseo_primary_category:
   - '315'
 ---
+
+![React Hooks](/static/images/posts/react_hooks_img_2.webp)
 
 Se fai un lavoro come il mio, l’approfondimento è una delle regole da seguire nel quotidiano. Nell’ultimo periodo mi è capitato di approfondire i **React Hooks** e ho deciso di scrivere per il blog dell’azienda in cui lavoro una guida su questo tema. La **guida ai React Hooks**, divisa in 3 parti nella quale ho presentato alcuni hooks di uso più comune e qualche altro utile al fine di migliorare le prestazioni delle vostre app in React.
 

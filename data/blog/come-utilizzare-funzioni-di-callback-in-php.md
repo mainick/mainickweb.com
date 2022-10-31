@@ -7,7 +7,7 @@ author: 'Maico Orazio'
 excerpt: ''
 type: post
 id: 520
-images: /static/images/posts/snippet-javascript.jpg
+images: /static/images/posts/logo-php.webp
 category:
   - PHP
 tag:
@@ -17,7 +17,7 @@ tag:
 post_format: []
 ---
 
-![Callback in PHP](/static/images/posts/snippet-javascript.jpg)
+![PHP](/static/images/posts/logo-php.webp)
 
 Una tecnica comunemente usata in programmazione è l’utilizzo delle **callback**. Una callback è una funzione che data come parametro ad un’altra funzione può essere richiamata nello svolgimento di quest’ultima.
 

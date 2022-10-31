@@ -7,7 +7,7 @@ author: 'Maico Orazio'
 excerpt: ''
 type: post
 id: 760
-images: /static/images/posts/snippets-mysql.jpg
+images: /static/images/posts/logo-mysql.webp
 category:
   - MySQL
 tag:
@@ -18,7 +18,7 @@ _yoast_wpseo_content_score:
   - '90'
 ---
 
-![](/static/images/posts/snippets-mysql.jpg 'snippets-mysql.jpg')
+![MySQL](/static/images/posts/logo-mysql.webp)
 
 Nel gestire grandi applicazioni Web si possono avere un sacco di righe di dati indesiderate. Ad esempio se un e-commerce è realizzato in modo da memorizzare in modo permanente la gestione del carrello dinamico, oppure la permanenza di vecchi listini divisi per gruppi d’acquisto, avremo la necessità nel tempo di cancellare questi dati dal database.
 

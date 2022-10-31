@@ -7,7 +7,7 @@ author: 'Maico Orazio'
 excerpt: ''
 type: post
 id: 495
-images: /static/images/posts/snippet-javascript.jpg
+images: /static/images/posts/logo-javascript.webp
 category:
   - javascript
   - snippets
@@ -17,7 +17,7 @@ tag:
 post_format: []
 ---
 
-![snippet-javascript.jpg](/static/images/posts/snippet-javascript.jpg)
+![JavaScript](/static/images/posts/logo-javascript.webp)
 
 Iterare gli **array associativi** in PHP è molto più semplice, ma proprio in questi giorni ho avuto l’esigenza di ottenere la **stessa funzionalità in JavaScript**, e mi sono reso conto di non saper come recuperare i dati da un array associativo con un ciclo nel linguaggio JavaScript.
 

@@ -7,7 +7,7 @@ author: 'Maico Orazio'
 excerpt: ''
 type: post
 id: 501
-thumbnail: /static/images/posts/snippets-mysql.jpg
+thumbnail: /static/images/posts/logo-mysql.webp
 category:
   - MySQL
   - snippets
@@ -17,7 +17,7 @@ tag:
 post_format: []
 ---
 
-![snippets-mysql.jpg](/static/images/posts/snippets-mysql.jpg)
+![MySQL](/static/images/posts/logo-mysql.webp)
 
 Un errore particolarmente importante che fanno molti programmatori è mescolare la **logica applicativa e il modello**. Gli sviluppatori PHP, ad esempio, hanno la tendenza di mettere insieme una quantità tremenda di query SQL nella loro logica del sito web, con conseguente codice impossibile da mantenere. Un buon numero di prodotti sono emersi per aiutare gli sviluppatori per evitare ciò, soprattutto framework MVC come Symfony o Zend Framework.
 
