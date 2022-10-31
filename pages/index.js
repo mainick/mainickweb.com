@@ -6,13 +6,15 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
+import kebabCase from '@/lib/utils/kebabCase'
 
 const MAX_DISPLAY = 7
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const allPosts = await getAllFilesFrontMatter('blog')
+  const publicPosts = allPosts.filter((post) => post.status === 'publish')
 
-  return { props: { posts } }
+  return { props: { posts: publicPosts } }
 }
 
 export default function Home({ posts }) {
