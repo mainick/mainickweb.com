@@ -25,14 +25,14 @@ post_format: []
 ## Operatori Rest e Spread
 
 Sebbene i due operatori siano in qualche modo diversi, JavaScript utilizza
-i tre punti (`...`) per rappresentare entrambi. L'operatore Rest raggruppa
-gli argomenti o i parametri forniti dall'utente in un unico array. D'altra
-parte, l'operatore Spread viene utilizzato per espandere un elenco iterabile
-(oggetti, array, etc.) nei suoi elementi.
+i tre punti (`...`) per rappresentarli entrambi. L'**operatore Rest raggruppa
+gli argomenti o i parametri forniti dall'utente in un unico array**. D'altra
+parte, l'**operatore Spread viene utilizzato per espandere un elenco iterabile
+(oggetti, array, etc.) nei suoi elementi**.
 
 ### L'operatore Rest
 
-In JavaScript, per passare un matrice di valori, puoi sfruttare l'operatore Rest
+In JavaScript, per passare una matrice di valori, puoi sfruttare l'operatore Rest
 come di seguito:
 
 ```javascript
@@ -66,9 +66,8 @@ const ParentComponent = () => {
 
 ### L'operatore Spread
 
-L'operatore Spread funziona in modo che consente di espandere un iterabile
-come una matrice o una stringa in punti in cui sono consentiti zero o più argomenti.
-Di seguito alcuni esempi di utilizzo:
+L'operatore Spread consente di espandere un iterabile come una matrice o
+una stringa.Di seguito alcuni esempi di utilizzo:
 
 ```javascript
 const detaild = ['my', 'name', 'is']
@@ -99,8 +98,89 @@ const myReduce = (state = initialState, action) => {
 }
 ```
 
-L'operatore Spread copia tutte le proprietà dell'oggetto `state` in un
+Nell'esempio sopra, l'operatore Spread copia tutte le proprietà dell'oggetto `state` in un
 nuovo oggetto e solo la proprietà `counter` del nuovo oggetto viene
 modificata o aggiornata.
+
+## La destrutturazione
+
+La **destrutturazione è un'espressione JavaScript che ci consente di decomprimere
+o estrarre** gli elementi di un array, oggetto, `Map` e `Set` in nuove variabili
+senza modificare o mutare l'elemento originale. Gli array e gli oggetti sono
+le due strutture dati più comunemente utilizzate in JavaScript, quindi ci concentriamo
+su di esse.
+
+### Destrutturazione di oggetti
+
+La destrutturazione degli oggetti segue uno schema specifico. Sulla destra abbiamo
+l'oggetto che vogliamo dividere (destrutturare); sulla sinistra c'è un modello simile
+a un oggetto corrispondente alle proprietà che vuoi estrarre.
+
+```javascript
+let user = {
+  name: 'Maico Orazio',
+  age: 39,
+  height: 185,
+}
+let { name, age, height } = user
+console.log(name) // 'Maico Orazio'
+console.log(age) // 39
+console.log(height) // 185
+```
+
+L'**ordine in cui si destrutturano le proprietà non ha importanza**, il codice
+riportato di seguito funziona come quello sopra
+
+```javascript
+let { height, name, age } = user
+```
+
+Il vantaggio della destrutturazione degli oggetti è che consente di assegnare un
+nuovo nome di variabile alle proprietà destrutturate da un oggetto; utile, ad esempio,
+quando abbiamo un nome di proprietà lungo
+
+```javascript
+let { name: n, age: a, height: h } = user
+console.log(n) // 'Maico Orazio'
+console.log(a) // 39
+console.log(h) // 185
+```
+
+### Destrutturazione di array
+
+Come la destrutturazione degli oggetti, la **destrutturazione degli array
+consente di ridurre gli elementi di un array in singoli elementi** a cui è
+possibile accedere tramite il loro nome di variabile.
+
+```javascript
+let myArray = [1, 2]
+let [one, two] = myArray
+console.log(one) // 1
+console.log(two) // 2
+```
+
+Allo stesso modo possiamo anche destrutturare un array nidificato
+
+```javascript
+let myArray = ['welcome', 'to', 'the', ['class', 'office', 'market']]
+const [, , , location] = myArray
+console.log(location) // ['class', 'office', 'market']
+let [first, , third] = location
+console.log(first) // 'class'
+console.log(third) // 'market'
+```
+
+In [React](https://www.mainickweb.com/tags/react), lo utilizzeremo molto
+spesso con l'oggetto `props` passato ad un componente
+
+```javascript
+const ChildComponent = (props) => {
+  const { name, age, height } = props
+  return <div>...</div>
+}
+const ParentComponent = () => {
+  return <ChildComponent name={'Maico Orazio'} age={39} height={185} />
+}
+```
 
 > Buona lavoro 👨‍💻
