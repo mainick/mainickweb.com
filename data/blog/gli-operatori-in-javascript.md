@@ -135,11 +135,11 @@ conditional_to_evaluate
 ```
 
 La prima espressione è la condizione da valutare, che dovrebbe restituire `true` o `false`.
-La seconda espressione è il codice che viene eseguito se la condizione è `true`.
-Infine, l'espressione a destra dei due punti rappresenta il codice da eseguire se
+La seconda espressione è il codice che viene eseguito se la condizione è `true`;
+mentre, l'espressione a destra dei due punti rappresenta il codice da eseguire se
 la condizione restituisce `false`.
 
-Di seguito un esempio di istruzione `if-else` convertita con l'operatore ternario
+Di seguito un esempio di istruzione `if-else` convertita utilizzando l'operatore ternario
 
 ```javascript
 let age = 35
