@@ -113,11 +113,11 @@ function MyComponent() {
 Nello codice riportato sopra, facciamo una richiesta all'endpoint remoto dell'API. Se l'operazione ha esito positivo
 (si risolve), viene eseguita l'istruzione del primo `then`, e la risposta viene convertita in un oggetto JSON.
 Questa conversione della risposta in un oggetto JSON è un'altra operazione asincrona, che se ha esito positivo,
-da seguito l'istruzione del secondo `then`, e i dati della richiesta vengono settati in `names` tramite la
+da seguito all'istruzione del secondo `then`, e i dati della richiesta vengono settati in `names` tramite la
 funzione `setNames` definita dall'hook `useState`. Se una delle due operazioni asincrone non riescono (rigettata),
 viene eseguito il codice del metodo `catch`, dove l'errore viene stampato sulla console.
 
-Le promise sono ottime per gestire le operazioni asincrone ed evitare l'[inferno delle callback](http://callbackhell.com/).
+Le promise sono ottime per gestire le operazioni asincrone ed evitare il [Callback Hell](http://callbackhell.com/).
 Andando oltre, ES2017 ha introdotto un'altra interessante funzionalità chiamata `async/await`, che è un modo più elegante per gestire le
 operazioni asincrone rispetto alle promise.
 
