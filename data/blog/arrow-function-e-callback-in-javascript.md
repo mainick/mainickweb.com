@@ -25,12 +25,12 @@ post_format: []
 ## Arrow Function
 
 L'edizione 2015 della specifica ECMAScript, popolarmente nota come ES6, ha aggiunto alcune funzionalità al linguaggio
-JavaScript. Le Arrow Function sono una di queste.
+JavaScript. Le **Arrow Function** sono una di queste.
 
 Le Arrow Function differiscono dalla normale dichiarazione di funzione in diversi modi, incluso il modo in cui viene
 espressa la loro sintassi e il modo in cui vengono determinati i loro ambiti. Sono utili quando è necessario passare
 una funzione, di solito una funzione anonima, come argomento di un'altra funzione (come nel caso delle **funzioni di
-ordine superiore**). L'abbreviazione sintattica dell'arrow function può migliorare la leggibilità del codice.
+ordine superiore** `link all'articolo da fare`). L'abbreviazione sintattica dell'**arrow function può migliorare la leggibilità del codice**.
 
 ```javascript
 function sum(a, b) {
@@ -46,7 +46,7 @@ const funcSum2 = (a, b) => a + b
 
 Se la funzione accetta un solo parametro è possibile omettere le parentesi attorno gli argomenti.
 
-In React, le arrow function possono essere utilizzate per creare componenti e possono essere utilizzate come funzioni
+In [React](https://www.mainickweb.com/tags/react), le arrow function possono essere utilizzate per creare componenti e possono essere utilizzate come funzioni
 di callback, impostare listener di eventi, etc.
 
 Il codice seguente mostra come sostituire un componente creato con la sintassi della dichiarazione di funzione con una
@@ -74,13 +74,13 @@ Altro esempio di utilizzo, quando si imposta un listener di eventi:
 ## Funzioni di Callback
 
 In JavaScript, le funzioni sono oggetti di prima classe; in altre parole, possono essere trattate allo stesso modo
-delle variabili. Una funzione di Callback, nella sua forma più elementare è una funzione che viene passata come
-argomento a un'altra funzione. Ciò consente ad una funzione di chiamare un'altra funzione, in genere dopo aver eseguito
+delle variabili. Una **funzione di Callback, nella sua forma più elementare è una funzione che viene passata come
+argomento a un'altra funzione**. Ciò consente ad una funzione di chiamare un'altra funzione, in genere dopo aver eseguito
 attività asincrone come il recupero di dati da un endpoint remoto, la gestione di eventi, etc. La funzione padre o la
-funzione che richiama la callback viene definita funzione di ordine superiore (HOF).
+funzione che richiama la callback viene definita **funzione di ordine superiore (HOF)** `link all'articolo da fare`.
 
 Molte delle funzioni di JavaScript accettano una callback come argomento, `setTimeout`, `setInterval`, `addEventListener`,
-e metodi degli array, `find`, `filter`, `some`, `map`, `forEach`, etc.
+anche i metodi degli array, `find`, `filter`, `some`, `map`, `forEach`, etc.
 
 ```javascript
 setTimeout(() => {
@@ -99,7 +99,7 @@ const btn = document.querySelector('.addTodo')
 btn.addEventListener('click', () => console.log('i was clicked'))
 ```
 
-In React, un buon numero di hook introdotti in React 16 accettano funzioni di callback; un esempio è l'hook `useEffect`
+In React, un buon numero di [hooks](https://www.mainickweb.com/blog/guida-ai-react-hooks) introdotti in **React 16** accettano funzioni di callback; un esempio è l'hook `useEffect`
 
 ```javascript
 export default function MyComponent() {
