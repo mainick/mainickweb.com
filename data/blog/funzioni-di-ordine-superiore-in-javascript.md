@@ -93,6 +93,65 @@ const presentStudents2 = students.filter((student) => student.status === true)
 console.log(presentStudents2) // [{name:'Maico Orazio',status:true},{name:'Giuseppe Verdi',status:true}]
 ```
 
+Considera che abbiamo bisogno di un sottoinsieme di dati filtrando su più valori di proprietà. Possiamo farlo utilizzando
+`filter` che contiene più condizioni:
+
+```javascript
+const newFiltered = students.filter(
+  (student) => student.name === 'Maico Orazio' && student.status === true
+)
+console.log(newFiltered) // [{name:'Maico Orazio',status:true}]
+```
+
+Quando di filtra su più valori, l'espressione della funzione può diventare lunga, il che rende poco leggibile. Un modo
+per affrontare questo problema consiste nell'utilizzare più funzioni `filter()` al posto dell'operatore
+logico `&&`, ottenendo gli stessi risultati:
+
+```javascript
+const newFiltered2 = students
+  .filter((student) => student.name === 'Maico Orazio')
+  .filter((student) => student.status === true)
+console.log(newFiltered2) // [{name:'Maico Orazio',status:true}]
+```
+
+Un altro modo per esprimere un filtro complesso è creare una funzione denominata:
+
+```javascript
+const studentsAttending = (student) => student.name === 'Maico Orazio' && student.status === true
+const newFiltered3 = students.filter(studentsAttending)
+console.log(newFiltered3) // [{name:'Maico Orazio',status:true}]
+```
+
+Possiamo ottimizzare la flessibilità consentendo di impostare il nome dello studente in fase di esecuzione utilizzando
+un parametro:
+
+```javascript
+const studentsAttending = (student, name) => student.name === name && student.status === true
+const newFiltered3 = students.filter(studentsAttending('Maico Orazio')) // Error
+```
+
+Sfortunatamente, questo creerebbe un errore perché il filtro si aspetta una funzione e ora stiamo cercando di passare
+l'output di `studentsAttending`.
+
+### Curry in JavaScript
+
+Per fornire una soluzione, possiamo utilizzare una tecnica avanzata di programmazione funzionale chiamata **currying**.
+Il currying consente di tradurre una funzione con più argomenti in una seguenza di funzioni, consentendoci così di
+creare parità con altre firme di funzione.
+
+Il currying è una trasformazione di funzioni che traduce una funzione da richiamabile `f(a, b, c)` in richiamabile
+come `f(a)(b)(c)`.
+
+Spostiamo il parametro `name` in un'espressione di funzione e riscriviamo `studentsAttending` usando il currying. In
+questo modo, la funzione `studentsAttending` diventa una funzione che accetta un nome `name` e restituisce un'altra
+funzione che accetta un oggetto `student`:
+
+```javascript
+const studentsAttending = (name) => (student) => student.name === name && student.status === true
+const newFiltered3 = students.filter(studentsAttending('Maico Orazio'))
+console.log(newFiltered3) // [{name:'Maico Orazio',status:true}]
+```
+
 ### Funzione `reduce`
 
 Questo metodo esegue una funzione di callback su ogni elemento dell'array, e accetta due argomenti:
@@ -102,8 +161,8 @@ Questo metodo esegue una funzione di callback su ogni elemento dell'array, e acc
 
 La funzione di callback accetta i seguenti quattro parametri:
 
-- accumulatore
-- elemento corrente
+- valore accumulatore: risultato dell'iterazione precedente
+- valore corrente
 - indice attuale
 - array di origine
 
@@ -124,6 +183,14 @@ const sum2 = nums.reduce((acc, value) => {
   acc + value
 })
 console.log(sum2) // 216
+```
+
+Invece di sommare i numeri di un array, utilizziamo `reduce` per trovare il numero più grande:
+
+```javascript
+const nums = [10, 23, 45, 37, 101]
+const max = nums.reduce((acc, value) => (acc > value ? acc : value))
+console.log(max) // 101
 ```
 
 Da tutti gli esempi precedenti, puoi vedere che le funzioni di ordine superiore rendono il codice più pulito e più
