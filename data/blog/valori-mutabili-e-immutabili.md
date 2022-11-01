@@ -1,8 +1,8 @@
 ---
-title: 'Valori mutevoli e immutabili'
+title: 'Valori mutabili e immutabili'
 date: '2022-12-05T07:30:12+01:00'
 status: draft
-permalink: /valori-mutevoli-e-immutabili
+permalink: /valori-mutabili-e-immutabili
 author: 'Maico Orazio'
 excerpt: ''
 type: post
@@ -18,7 +18,7 @@ tag:
 post_format: []
 ---
 
-# Valori mutevoli e immutabili
+# Valori mutabili e immutabili
 
 ![JavaScript](/static/images/posts/logo-javascript.webp)
 
