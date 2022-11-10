@@ -1,7 +1,7 @@
 ---
 title: 'Gli operatori in JavaScript'
 date: '2022-11-10T07:30:12+01:00'
-status: public
+status: publish
 permalink: /gli-operatori-in-javascript
 author: 'Maico Orazio'
 excerpt: ''
