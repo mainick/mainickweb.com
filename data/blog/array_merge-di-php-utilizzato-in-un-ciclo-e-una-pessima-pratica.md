@@ -7,6 +7,7 @@ author: 'Maico Orazio'
 excerpt: ''
 type: post
 id: 830
+images: /static/images/posts/logo-php.webp
 category:
   - PHP
 tag:
@@ -16,6 +17,8 @@ tag:
   - performance
 post_format: []
 ---
+
+![PHP](/static/images/posts/logo-php.webp)
 
 Utilizzare la funzione `array_merge` in un ciclo `for / foreach / while` come in questo modo:
 

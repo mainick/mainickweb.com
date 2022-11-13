@@ -1,7 +1,7 @@
 ---
 title: 'Gli operatori Rest e Spread e la destrutturazione'
 date: '2022-11-14T07:30:12+01:00'
-status: draft
+status: publish
 permalink: /gli-operatori-rest-e-spread-e-la-destrutturazione
 author: 'Maico Orazio'
 excerpt: ''
