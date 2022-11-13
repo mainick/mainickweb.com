@@ -18,8 +18,6 @@ tag:
 post_format: []
 ---
 
-# Operatori Rest e Spread e la destrutturazione
-
 ![JavaScript](/static/images/posts/logo-javascript.webp)
 
 ## Operatori Rest e Spread

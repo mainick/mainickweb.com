@@ -18,8 +18,6 @@ tag:
 post_format: []
 ---
 
-# Operatori in Javascript
-
 ![JavaScript](/static/images/posts/logo-javascript.webp)
 
 ## Operatori Logici
