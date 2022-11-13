@@ -54,7 +54,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, excerpt, tags, tag } = frontMatter
             return (
-              <li key={slug} className="py-4">
+              <li key={slug} className="py-4 pb-2">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                   <dl>
                     <dt className="sr-only">Pubblicato il</dt>

@@ -46,7 +46,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </div>
               <dl className="space-y-10">
                 <div>
-                  <dt className="sr-only">Pubblicato il</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time>{Math.ceil(readingTime.minutes)} min di lettura</time>
                   </dd>

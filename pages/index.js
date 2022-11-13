@@ -45,7 +45,7 @@ export default function Home({ posts }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, excerpt, tags, tag } = frontMatter
             return (
-              <li key={slug} className="py-8">
+              <li key={slug} className="pt-4 pb-2">
                 <article>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
@@ -73,15 +73,6 @@ export default function Home({ posts }) {
                         <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                           {excerpt}
                         </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Leggi di pi&ugrave; &rarr;
-                        </Link>
                       </div>
                     </div>
                   </div>
