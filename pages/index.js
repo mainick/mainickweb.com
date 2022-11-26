@@ -27,8 +27,7 @@ export default function Home({ posts }) {
             Hey{' '}
             <img
               src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
-              width="30px"
-              className="m-0 inline"
+              className="m-0 inline w-8"
               alt="hey"
             />
             , sono Maico

@@ -11,7 +11,7 @@ github: https://github.com/mainick
 devto: https://dev.to/mainick
 ---
 
-# Hey <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" class="inline m-0" />, sono Maico (mainick)
+# Hey <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" class="w-8 inline m-0" />, sono Maico (mainick)
 
 Benvenuto a casa mia su Internet! Questo blog funge per me da luogo dove condividere codice e pensieri. E' un riflesso del mio
 percorso professionale e dei miei interessi, specialmente dal lato tecnico delle cose.
