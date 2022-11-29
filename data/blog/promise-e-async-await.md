@@ -1,7 +1,7 @@
 ---
 title: 'Promise e Async/Await'
 date: '2022-11-28T07:30:12+01:00'
-status: draft
+status: publish
 permalink: /promise-e-async-await
 author: 'Maico Orazio'
 excerpt: ''
@@ -17,8 +17,6 @@ tag:
   - snippets
 post_format: []
 ---
-
-# Promise e Async/Await
 
 ![JavaScript](/static/images/posts/logo-javascript.webp)
 
