@@ -27,8 +27,8 @@ JavaScript. Le **Arrow Function** sono una di queste.
 
 Le Arrow Function differiscono dalla normale dichiarazione di funzione in diversi modi, incluso il modo in cui viene
 espressa la loro sintassi e il modo in cui vengono determinati i loro ambiti. Sono utili quando è necessario passare
-una funzione, di solito una funzione anonima, come argomento di un'altra funzione (come nel caso delle **funzioni di
-ordine superiore**). L'abbreviazione sintattica dell'**arrow function può migliorare la leggibilità del codice**.
+una funzione, di solito una funzione anonima, come argomento di un'altra funzione (come nel caso delle **[funzioni di
+ordine superiore](https://www.mainickweb.com/blog/funzioni-di-ordine-superiore-in-javascript)**). L'abbreviazione sintattica dell'**arrow function può migliorare la leggibilità del codice**.
 
 ```javascript
 function sum(a, b) {
@@ -75,7 +75,7 @@ In JavaScript, le funzioni sono oggetti di prima classe; in altre parole, posson
 delle variabili. Una **funzione di Callback, nella sua forma più elementare è una funzione che viene passata come
 argomento a un'altra funzione**. Ciò consente ad una funzione di chiamare un'altra funzione, in genere dopo aver eseguito
 attività asincrone come il recupero di dati da un endpoint remoto, la gestione di eventi, etc. La funzione padre o la
-funzione che richiama la callback viene definita **funzione di ordine superiore (HOF)**.
+funzione che richiama la callback viene definita **[funzione di ordine superiore (HOF)](https://www.mainickweb.com/blog/funzioni-di-ordine-superiore-in-javascript)**.
 
 Molte delle funzioni di JavaScript accettano una callback come argomento, `setTimeout`, `setInterval`, `addEventListener`,
 anche i metodi degli array, `find`, `filter`, `some`, `map`, `forEach`, etc.

@@ -1,7 +1,7 @@
 ---
 title: 'Funzioni di Ordine Superiore (HOF) in JavaScript'
-date: '2023-01-09T07:30:12+01:00'
-status: draft
+date: '2023-01-05T07:30:12+01:00'
+status: publish
 permalink: /funzioni-di-ordine-superiore-in-javascript
 author: 'Maico Orazio'
 excerpt: ''
