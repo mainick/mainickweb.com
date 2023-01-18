@@ -1,7 +1,7 @@
 ---
 title: 'PHP Match Expression - Match vs Switch'
-date: '2023-02-06T07:30:09+01:00'
-status: draft
+date: '2023-01-18T07:30:12+01:00'
+status: publish
 permalink: /php-match-expression-match-vs-switch
 author: 'Maico Orazio'
 excerpt: ''
@@ -46,7 +46,7 @@ switch ($paymentStatus) {
 }
 ```
 
-All'interno delle parentesi graffe forniamo coppie di valori dove la chiave è la singola espressione condizionale e
+All'interno delle parentesi graffe formiamo coppie di valori dove la chiave è la singola espressione condizionale e
 il valore è l'espressione di ritorno.
 
 ```php
@@ -59,14 +59,15 @@ $paymentStatusDisplay = match ($paymentStatus) {
 echo $paymentStatusDisplay;
 ```
 
-Parliamo delle differerenze.
+#### Parliamo delle differerenze.
 
-La prima differenza è che l'espressione di corrispondenza è in realta' un'espressione e valuta un valore e
-quindi puo' essere assegnata a una variabile. Puo' essere praticamente qualsiasi tipo di espressione,
-ad esempio potresti avere una funzione che restituisce un valore.
-La seconda differenza è che all'interno dell'istruzione `switch` ha necessita' di utilizzare `break` per evitare
-alcuni risultati inaspettati, perché, senza l'istruzione `break`, saranno valutati anche gli altri `case`.
-L'istruzione `match` restituira' solo un valore una volta trovata la corrispondenza.
+La prima differenza è che l'espressione di corrispondenza è in realtà un'espressione e valuta un valore,
+quindi può essere assegnata a una variabile. Può essere praticamente qualsiasi tipo di espressione,
+ad esempio potremmo utilizzare una funzione che restituisce un valore.
+
+La seconda differenza è che `switch` ha necessita' di utilizzare `break` per evitare
+alcuni risultati inaspettati, come la valutazione anche degli altri `case`, mentre l'istruzione `match` restituisce
+un valore una volta trovata la corrispondenza.
 
 La terza differenza è che nell'istruzione `switch` il valore predefinito non è richiesto, mentre viene generato
 un errore fatale se in `match` non viene trovata la relativa corrispondenza in uno dei casi riportati e
