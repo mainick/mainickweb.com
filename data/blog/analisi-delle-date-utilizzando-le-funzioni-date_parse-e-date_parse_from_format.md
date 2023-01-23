@@ -137,4 +137,4 @@ Array
 )
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

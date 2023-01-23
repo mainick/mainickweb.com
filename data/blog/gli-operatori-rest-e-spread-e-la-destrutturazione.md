@@ -181,4 +181,4 @@ const ParentComponent = () => {
 }
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

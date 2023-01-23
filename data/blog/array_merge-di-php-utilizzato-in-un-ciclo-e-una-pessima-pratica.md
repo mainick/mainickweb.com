@@ -113,4 +113,4 @@ output
 
 Spero ti siano utili questi esempi, guarda ora il tuo codice per capire cosa puoi migliorare!!!
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

@@ -118,4 +118,4 @@ export default function MyComponent() {
 }
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

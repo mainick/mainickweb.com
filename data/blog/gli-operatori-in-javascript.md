@@ -168,4 +168,4 @@ Nell'esempio sopra, utilizziamo l'operatore ternario per eseguire il
 rendering del componente `UserDashboard` se l'utente ha effettuato l'accesso;
 altrimenti, eseguiamo il rendering del componente `Login`.
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

@@ -86,4 +86,4 @@ $paymentStatus = false;
 Una cosa da notare è che l'espressione `match` non fara' deprecare l'istruzione `switch` in quanto ha ancora i suoi casi d'uso;
 ad esempio, `match` restituisce un valore trovata la corrispondenza, con `switch` puoi eseguire più istruzioni.
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

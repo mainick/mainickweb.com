@@ -312,4 +312,4 @@ $arr = ['y': 3, 'x' => 6];
 echo foo(...$arr); // 2
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

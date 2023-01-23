@@ -221,4 +221,4 @@ const nameLength = mapClone(names, (item) => item.length)
 console.log(nameLength) // [ 5, 8, 8 ]
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

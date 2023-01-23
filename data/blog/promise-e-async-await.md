@@ -171,4 +171,4 @@ La parola chiave `await` indica a JavaScript di sospendere l'esecuzione della fu
 asincrono non viene soddisfatto (risolto o rigettato). Se il codice asincrono viene rigettato, viene eseguito il codice
 del blocco `catch`.
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

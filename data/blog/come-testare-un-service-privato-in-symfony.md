@@ -121,4 +121,4 @@ services:
     public: true
 ```
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻

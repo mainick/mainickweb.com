@@ -107,4 +107,4 @@ console.log(newObj) // { name: 'Maico', age: 39 }
 > Utilizzare l'immutabilità nelle tue applicazioni migliorerà il modo in cui concepisci il codice e renderà il codice
 > più pulito e più facile da capire.
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻
