@@ -1,7 +1,7 @@
 ---
 title: 'Che cosa è this in JavaScript?'
-date: '2023-01-16T07:30:12+01:00'
-status: draft
+date: '2023-02-10T18:00:09+01:00'
+status: publish
 permalink: /che-cos-e-this-in-javascript
 author: 'Maico Orazio'
 excerpt: 'In questo articolo esamineremo la parola chiave this e le quattro regole che ne determinano il comportamento in JavaScript'
@@ -216,4 +216,4 @@ Qual è l'ordine di precedenza se più di una regola corrisponde a dove invocata
 - infine, imposta l'oggetto globale per impostazione predefinita se una qualsiasi delle regole precedenti non
   corrisponde e la funzione non è in esecuzione in modalità `strict`.
 
-> Buona lavoro 👨‍💻
+> Buon lavoro 👨‍💻
