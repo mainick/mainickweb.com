@@ -4,7 +4,7 @@ date: '2023-01-18T07:30:12+01:00'
 status: publish
 permalink: /php-match-expression-match-vs-switch
 author: 'Maico Orazio'
-excerpt: ''
+excerpt: 'Vediamo le differenze tra l'istruzione switch e l'espressione di corrispondenza match introdotta in PHP 8'
 type: post
 id: 900
 images: /static/images/posts/logo-php.webp

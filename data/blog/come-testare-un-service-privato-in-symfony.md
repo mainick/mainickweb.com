@@ -4,7 +4,7 @@ date: '2023-01-23T07:30:12+01:00'
 status: publish
 permalink: /come-testare-un-service-privato-in-symfony
 author: 'Maico Orazio'
-excerpt: ''
+excerpt: 'In Symfony 3.4 hanno reso tutti i services privati per impostazione predefinita. In questo nuovo articolo riporto una possibile soluzione al problema di testare un service privato con approccio TDD'
 type: post
 id: 901
 images: /static/images/posts/logo-symfony.webp
