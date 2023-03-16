@@ -17,11 +17,11 @@ const siteMetadata = {
   email: 'maico.orazio@gmail.com',
   twitter_nickname: '@mainick',
   github: 'https://github.com/mainick',
-  twitter: 'http://twitter.com/mainick',
+  twitter: 'https://twitter.com/mainick',
   facebook: 'http://www.facebook.com/maico.orazio',
   devto: 'https://dev.to/mainick',
   mediumcom: 'https://medium.com/@mainick',
-  linkedin: 'http://www.linkedin.com/in/maicoorazio',
+  linkedin: 'https://www.linkedin.com/in/maicoorazio',
   locale: 'it-IT',
   favicon: {
     apple: '/static/favicons/apple-touch-icon.png',
