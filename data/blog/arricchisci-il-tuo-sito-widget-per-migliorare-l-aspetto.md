@@ -2,7 +2,7 @@
 title: 'Arricchisci il tuo sito: widget per migliorare l aspetto'
 date: '2008-09-05T11:34:30+01:00'
 status: publish
-permalink: /arricchisci-il-tuo-sito-widget-per-migliorare-laspetto
+permalink: /arricchisci-il-tuo-sito-widget-per-migliorare-l-aspetto
 author: 'Maico Orazio'
 excerpt: ''
 type: post

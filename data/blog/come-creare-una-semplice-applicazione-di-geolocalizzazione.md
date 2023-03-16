@@ -143,4 +143,4 @@ Nella funzione descritta sopra, definiamo un nuovo oggetto `Geocoder`. Analizzia
 
 ## Conclusioni
 
-Questo è solo un esempio di creazione della mappa utilizzando le **Geolocation API di HTML5** e quelle di **Google Maps**. Creare una mappa è abbastanza semplice, quindi è possibile personalizzarla utilizzando tutti i tipi di metodi e proprietà delle API; per saperne di più date un’occhiata alla [documentazione delle Google Maps JavaScript API V3](http://code.google.com/intl/it-IT/apis/maps/documentation/javascript/ 'Google Maps JavaScript API V3').
+Questo è solo un esempio di creazione della mappa utilizzando le **Geolocation API di HTML5** e quelle di **Google Maps**. Creare una mappa è abbastanza semplice, quindi è possibile personalizzarla utilizzando tutti i tipi di metodi e proprietà delle API; per saperne di più date un’occhiata alla [documentazione delle Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview?hl=it 'Google Maps JavaScript API V3').

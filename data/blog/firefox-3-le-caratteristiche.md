@@ -17,11 +17,11 @@ tag:
 post_format: []
 ---
 
-[![Firefox 3](/static/images/posts/firefox-3.jpg 'Firefox 3')](http://www.mainickweb.com/wp-content/2008/06/firefox-3.jpg)
+![Firefox 3](/static/images/posts/firefox-3.jpg 'Firefox 3')
 
-**Firefox 3** entra nel Guinnes dei Primati come software più scaricato da internet con l’iniziativa [**Download Day**](http://www.spreadfirefox.com/it/worldrecord/ 'Spread Firefox'): scaricato 8 milioni di volte nell’arco di 24 ore.
+**Firefox 3** entra nel Guinnes dei Primati come software più scaricato da internet con l’iniziativa **Download Day**: scaricato 8 milioni di volte nell’arco di 24 ore.
 
-Ad oggi andando sullo stesso [**sito web**](http://www.spreadfirefox.com/it/worldrecord 'Spread Firefox') **Firefox 3** ha un totale di download mondiale di oltre 25 milioni: ci sarà un perchè!
+Ad oggi andando sullo stesso sito web **Firefox 3** ha un totale di download mondiale di oltre 25 milioni: ci sarà un perchè!
 
 Il mio primo post è dedicato al mio più caro amico di vita nel web: oggi discuterò insieme a voi delle sue principali caratteristiche.
 

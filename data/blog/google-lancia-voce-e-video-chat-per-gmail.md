@@ -22,7 +22,7 @@ post_format: []
 
 Google ha realizzato un importante aggiornamento per Gmail: **voce e video chat** in un sol colpo.
 
-Per utilizzare queste nuove funzionalità, bisogna semplicemente installare un [**plugin per browser**](http://mail.google.com/videochat 'Chat video e vocale di Gmail'), basta poi fare click su “_video &amp; more_” dal menu nella finestra di chat di Gmail e selezionare “_Start Video chat_” o “_Start Voice chat_“. E’ possibile passare ad una visualizzazione a schermo intero o finesta pop-up.
+Per utilizzare queste nuove funzionalità, bisogna semplicemente installare un **plugin per browser** (Chat video e vocale di Gmail), basta poi fare click su “_video &amp; more_” dal menu nella finestra di chat di Gmail e selezionare “_Start Video chat_” o “_Start Voice chat_“. E’ possibile passare ad una visualizzazione a schermo intero o finesta pop-up.
 
 Introducendo la video chat, Google si avvicina sempre di più all’unione di tutti i relativi servizi: dopo Google Calendar, Google Documenti.
 

@@ -2,7 +2,7 @@
 title: 'Fixare il problema dell overflow orizzontale IE'
 date: '2008-10-16T07:30:53+01:00'
 status: publish
-permalink: /fissare-il-problema-delloverflow-orizzontale-ie
+permalink: /fixare-il-problema-dell-overflow-orizzontale-ie
 author: 'Maico Orazio'
 excerpt: ''
 type: post

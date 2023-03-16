@@ -153,7 +153,7 @@ La soluzione migliore è un semplice overflow:auto o overflow:hidden nel div con
 ---
 
 Se vorremmo utilizzare tutti i nuovi CSS3 selettori, IE6 non supporta tutti quelli importanti.  
-Molti di questi selettori non sono supportati neppure da Firefox 3. Per un elenco completo dei selettori supportati, consultare questo post sul [supporto dei CSS selettori nei browser](http://www.evotech.net/blog/2008/05/browser-css-selector-support/ 'Browser CSS Selector Support').
+Molti di questi selettori non sono supportati neppure da Firefox 3. Per un elenco completo dei selettori supportati, consultare questo post sul [supporto dei CSS selettori nei browser](https://caniuse.com/?search=selectors 'Browser CSS Selector Support').
 
 ### Soluzione
 

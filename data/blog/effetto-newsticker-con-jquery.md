@@ -19,9 +19,9 @@ tag:
 post_format: []
 ---
 
-Con questo piccolo articolo voglio illustrare un modo per visualizzare le notizie recenti con [**liScroll**](http://www.gcmingati.net/wordpress/wp-content/lab/jquery/newsticker/jq-liscroll/scrollanimate.html 'liScroll (a jQuery News Ticker made easy)'), un plugin per jQuery che trasforma qualsiasi elenco non ordinato _ul_ in un **news ticker a scorrimento**.
+Con questo piccolo articolo voglio illustrare un modo per visualizzare le notizie recenti con **liScroll** (a jQuery News Ticker made easy), un plugin per jQuery che trasforma qualsiasi elenco non ordinato _ul_ in un **news ticker a scorrimento**.
 
-Con il termine _“newsticker”_ si vuole intendere un box in cui si possono leggere le **ultime notizie con effetto scorrimento** tipico dei siti di informazione giornalistica
+Con il termine _"newsticker"_ si vuole intendere un box in cui si possono leggere le **ultime notizie con effetto scorrimento** tipico dei siti di informazione giornalistica
 
 # Utilizzo
 
@@ -80,5 +80,3 @@ $(function () {
 ```
 
 modificando il valore del parametro _travelocity_.
-
-Sul [pagina dedicata](http://www.gcmingati.net/wordpress/wp-content/lab/jquery/newsticker/jq-liscroll/scrollanimate.html 'liScroll (a jQuery News Ticker made easy)') a **liScroll plugin jQuery** sono disponibili demo e script.

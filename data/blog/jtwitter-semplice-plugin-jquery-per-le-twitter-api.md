@@ -23,7 +23,7 @@ post_format: []
 
 ![twitter-mainick.jpg](/static/images/posts/twitter-mainick.jpg 'jTwitter da MaiNick')
 
-[**jTwitter**](http://plugins.jquery.com/project/jtwitter 'jTwitter plugin jQuery') è un semplice plugin jQuery che ci fornisce un facile accesso alle **Twitter API** per prelevare informazioni su uno specifico utente di twitter tramite il suo nome utente.
+**jTwitter** è un semplice plugin jQuery che ci fornisce un facile accesso alle **Twitter API** per prelevare informazioni su uno specifico utente di twitter tramite il suo nome utente.
 
 Il risultato della consultazione delle Twitter API è un **oggetto JSON costituito dai dettagli dell’utente**, quali nome completo, URL homepage, conteggi vari come seguaci, amici, favoriti, numero stati (tweets), localizzazione, etc.
 

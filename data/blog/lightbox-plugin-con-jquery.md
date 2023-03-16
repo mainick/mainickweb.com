@@ -22,7 +22,7 @@ post_format: []
 
 Inizio con un primo articolo su un plugin per **jQuery** alternativo alla famosissima **Lightbox JS** di [Lokesh Dhakar](http://www.lokeshdhakar.com/projects/lightbox2/ 'Lightbox 2').
 
-Questo plugin, semplice e facile da usare è una creazione di **Leandro Vieira**, per utilizzarlo è necessario scaricare la libreria [**jQuery**](http://jquery.com/ 'jQuery - The Write Less, Do More, JavaScript Library') e il [**plugin**](http://leandrovieira.com/projects/jquery/lightbox/ 'jQuery lightbox plugin') alla pagina dedicata al progetto.
+Questo plugin, semplice e facile da usare è una creazione di **Leandro Vieira**, per utilizzarlo è necessario scaricare la libreria [**jQuery**](http://jquery.com/ 'jQuery - The Write Less, Do More, JavaScript Library') e il [**plugin**](https://avioli.github.io/jquery-lightbox/ 'jQuery lightbox plugin') alla pagina dedicata al progetto.
 
 Per utilizzarlo in qualsiasi documento html inserire all’interno dei tag Head i collegamenti ai file javascript:
 

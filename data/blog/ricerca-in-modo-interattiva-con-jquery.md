@@ -201,4 +201,4 @@ Le opzioni specificate sopra nel codice javascript di inizializzazione sono alcu
 
 _Nota: Quando QuickSearch è collegata a una tabella, evitate l’uso di prepend o append._
 
-Sviluppato da Rik Lomas potete trovare ulteriori informazioni sulla pagina dedicata a [QuickSearch plugin jQuery](http://rikrikrik.com/jquery/quicksearch/ 'jQuery quickSearch plug-in'), come il file javascript del plugin e le demo implementati sugli altri elementi specificati all’inizio dell’articolo.
+Sviluppato da Rik Lomas potete trovare ulteriori informazioni sulla pagina dedicata a QuickSearch plugin jQuery, come il file javascript del plugin e le demo implementati sugli altri elementi specificati all’inizio dell’articolo.
