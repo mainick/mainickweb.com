@@ -1,11 +1,11 @@
 ---
 title: 'Parametri delle funzioni in PHP'
-date: '2023-02-13T07:30:09+01:00'
+date: '2023-03-20T07:30:09+01:00'
 status: draft
 permalink: /parametri-delle-funzioni-in-php
 author: 'Maico Orazio'
-excerpt: ''
-type: post
+excerpt: 'In questo articolo parleremo degli argomenti delle funzioni, valori predefiniti, unione di tipi, decompressione degli argomenti, passaggio per valore o riferimento e per finire, introdotto in PHP 8, argomenti denominati'
+type: publish
 id: 905
 images: /static/images/posts/logo-php.webp
 category:
@@ -19,15 +19,16 @@ post_format: []
 
 ![PHP](/static/images/posts/logo-php.webp)
 
-In questo articolo parleremo degli argomenti delle funzioni, valori predefiniti, unione di tipi,
-decompressione degli argomenti, passaggio per valore o riferimento e per finire, introdotto in PHP 8, argomenti denominati.
+In questo articolo parleremo degli **argomenti delle funzioni**, **valori predefiniti**, **unione di tipi**,
+**decompressione degli argomenti**, **passaggio per valore o riferimento** e per finire, introdotto in PHP 8, **argomenti denominati**.
 
 ## Definire i parametri della funzione
 
 Siamo in grado di definire i parametri della funzione all'interno delle parentesi della definizione della funzione.
 
 ```php
-function foo($x, $y) {
+function foo($x, $y) 
+{
 	return $x * $y;
 }
 ```
@@ -38,8 +39,8 @@ Quando chiamiamo la funzione `foo()` dobbiamo passare due argomenti.
 echo foo(5, 10); // 50
 ```
 
-I parametri sono le variabili riportate nella definizione della funzione, mentre gli argomenti sono i valori
-effettivi che passiamo alla funzione quando la invochiamo; nell'esempio sopra `$x` e `$y` sono i parametri della funzione
+I **parametri sono le variabili riportate nella definizione della funzione**, mentre **gli argomenti sono i valori
+effettivi che passiamo alla funzione** quando la invochiamo; nell'esempio sopra `$x` e `$y` sono i parametri della funzione
 e `5` e `10` sono gli argomenti passati, ovvero i valori assegnati ai parametri della funzione `foo()`.
 
 ## Type Hinting
@@ -47,17 +48,18 @@ e `5` e `10` sono gli argomenti passati, ovvero i valori assegnati ai parametri 
 **Type Hinting** è una funzionalità introdotta da PHP a partire dalla versione 5, che consente di specificare il tipo
 di oggetto/dato passato, come argomento, a una funzione o a un metodo.
 
-Dalla versione 7 di PHP, in alternativa alla _weak mode_ (modalità debole) esiste la _strict mode_ (modalità rigorosa):
-impostando questa modalità la forzatura da parte di PHP di interpretare la tipologia delle variabili,
-e otterremo un errore fatale.
+Dalla versione 7 di PHP, in alternativa alla _weak mode_ (modalità debole) esiste la _strict mode_ (modalità rigorosa);
+impostando questa modalità, forziamo PHP a interpretare la tipologia delle variabili,
+nel caso non viene soddisfatta, otterremo un errore fatale.
 
-Per cui, se vogliamo essere più restrittivi, e vogliamo accettare solo il formato `int` e non altri, dovremo dichiararlo
-in testa al codice, tramite l'istruzione `declare` seguito da `strict_types=1`.
+Per cui, se, nell'esempio sopra, vogliamo essere più restrittivi e accettare solo il formato `int` e non altri, 
+dovremo dichiararlo in testa al codice, tramite l'istruzione `declare` seguito da `strict_types=1`.
 
 ```php
 declare(strict_types=1);
 
-function foo(int $x, int $y) {
+function foo(int $x, int $y) 
+{
 	return $x * $y;
 }
 ```
@@ -72,23 +74,27 @@ echo foo(5.0, '10');
 ## Unione di tipi
 
 Dalla versione 8 di PHP è possibile accettare più tipi di dati. Possiamo specificare l'**unione di tipi**,
-separati da `|`.
+attraverso il carattere `|`.
 
 ```php
 declare(strict_types=1);
 
-function foo(int|float $x, int|float $y) {
+function foo(int|float $x, int|float $y) 
+{
 	return $x * $y;
 }
 echo foo(5.0, 10); // 50
 ```
+
+In questo caso possiamo invocare la funzione `foo()` passando come argomenti sia numeri interi che decimali.
 
 ## Valori predefiniti
 
 Per ogni parametro riportato nella definizione della funzione è necessario passare un argomento altrimenti otterremo un errore fatale.
 
 ```php
-echo foo(5.0); // Fatal error: Uncaught ArgumentCountError: Too few arguments to function foo(), 1 passed in ...
+echo foo(5.0); 
+// Fatal error: Uncaught ArgumentCountError: Too few arguments to function foo(), 1 passed in ...
 ```
 
 È possibile impostare dei **valori predefiniti ai parametri** in modo da assegnare un valore nel caso non venga passato come argomento.
@@ -96,14 +102,15 @@ echo foo(5.0); // Fatal error: Uncaught ArgumentCountError: Too few arguments to
 ```php
 declare(strict_types=1);
 
-function foo(int|float $x, int|float $y = 10) {
+function foo(int|float $x, int|float $y = 10) 
+{
 	return $x * $y;
 }
 echo foo(5.0); // 50
 ```
 
-È possibile assegnare array scalari e valori `null` come valori predefiniti, ma non una chiamata di funzione o un oggetto,
-deve essere un'espressione costante.
+È possibile assegnare array scalari e valori `null` come valori predefiniti, ma non una chiamata di funzione o un oggetto:
+è necessario che sia un'espressione costante.
 
 Altra cosa importante, i parametri facoltativi devono essere definiti dopo qualsiasi parametro obbligatorio.
 
@@ -112,13 +119,14 @@ Altra cosa importante, i parametri facoltativi devono essere definiti dopo quals
 Per impostazione predefinita, gli argomenti dei **parametri richiesti sono passati per valore**.
 È possibile specificare di **passare un argomento per riferimento** utilizzando il carattere `&` nella definizione del parametro.
 
-Come esempio, definiamo una funzione `foo()` che accetta 2 argomenti, se il primo è un numero pari lo divide per 2, e
-restituisce la moltiplicazione dei 2 argomenti.
+Come esempio, definiamo una funzione `foo()` che accetta 2 argomenti e restituisce la moltiplicazione degli argomenti, 
+se il primo argomento è un numero pari lo divide per 2.
 
 ```php
 declare(strict_types=1);
 
-function foo(int|float $x, int|float $y): int|float {
+function foo(int|float $x, int|float $y): int|float 
+{
 	if ($x % 2 === 2) {
 		$x /= 2;
 	}
@@ -141,7 +149,8 @@ del parametro `$x` influisce anche sul valore della variabile originale `$a`.
 ```php
 declare(strict_types=1);
 
-function foo(int|float &$x, int|float $y): int|float {
+function foo(int|float &$x, int|float $y): int|float 
+{
 	if ($x % 2 === 2) {
 		$x /= 2;
 	}
@@ -161,7 +170,10 @@ della funzione man mano che aggiungiamo un argomento oppure utilizzare l'**opera
 qualsiasi argomento passato alla funzione.
 
 ```php
-function sum(...$numbers): int|float {
+declare(strict_types=1);
+
+function sum(...$numbers): int|float 
+{
 	$sum = 0;
 	foreach ($numbers as $number) {
 		$sum += $number;
@@ -179,7 +191,10 @@ echo sum($a, $b, 10, 25); // 48
 passati dopo quelli fissi saranno aggiunti all'array.
 
 ```php
-function sum(int|float &$x, int|float $y, ...$numbers): int|float {
+declare(strict_types=1);
+
+function sum(int|float &$x, int|float $y, ...$numbers): int|float 
+{
 	return $x + $y + array_sum($numbers);
 }
 
@@ -194,7 +209,10 @@ alla funzione vengono catturati all'interno dell'array `$numbers`.
 Possiamo specificare il tipo degli argomenti _extra_ passati alla funzione.
 
 ```php
-function sum(int|float &$x, int|float $y, int|float...$numbers): int|float {
+declare(strict_types=1);
+
+function sum(int|float &$x, int|float $y, int|float...$numbers): int|float 
+{
 	return $x + $y + array_sum($numbers);
 }
 
@@ -204,10 +222,15 @@ echo sum($a, $b, 10, 25, '8');
 // Fatal error: Uncaught TypeError: sum(): Argument #5 must be of type int|float, string given, called in ...
 ```
 
+In questo caso riceviamo un errore, perché l'ultimo argomento passato alla funzione è una stringa.
+
 L'operatore spread puo' essere utilizzato anche per decomprimere un array nell'elenco degli argomenti da passare a una funzione.
 
 ```php
-function sum(int|float &$x, int|float $y, int|float...$numbers): int|float {
+declare(strict_types=1);
+
+function sum(int|float &$x, int|float $y, int|float...$numbers): int|float 
+{
 	return $x + $y + array_sum($numbers);
 }
 
@@ -220,7 +243,7 @@ echo sum($a, $b, ...$numbers); // 56
 ## Argomenti denominati
 
 In PHP 8.0 abbiamo la possibilità di specificare il nome dell'argomento da passare alla funzione, non considerando
-l'ordine come riportato nella dichiarazione della funzione.
+l'ordine riportato nella definizione della funzione.
 
 Definiamo una funzione dove se il primo parametro `$x` è divisibile per il secondo `$y` restituisce la loro divisione
 altrimenti restituisce il valore di `$x`.
@@ -228,7 +251,8 @@ altrimenti restituisce il valore di `$x`.
 ```php
 declare(strict_types=1);
 
-function foo(int &$x, int $y): int {
+function foo(int &$x, int $y): int 
+{
 	if ($x % $y === 0) {
 		return $x / $y;
 	}
@@ -280,7 +304,7 @@ setcookie (
 
 setcookie('test', '', 0, '', '', false, true);
 // named arguments
-setcookie(name: 'test', httponly: true;
+setcookie(name: 'test', httponly: true);
 ```
 
 Passando lo stesso argomento più volte otteniamo un errore perché sovrascrive l'argomento precedente.
