@@ -11,7 +11,6 @@ images: /static/images/posts/logo-php.webp
 category:
   - PHP
 tag:
-  - appunti-dev
   - php
   - loop
   - performance

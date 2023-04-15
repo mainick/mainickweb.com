@@ -5,13 +5,12 @@ status: publish
 permalink: /parametri-delle-funzioni-in-php
 author: 'Maico Orazio'
 excerpt: 'In questo articolo parleremo degli argomenti delle funzioni, valori predefiniti, unione di tipi, decompressione degli argomenti, passaggio per valore o riferimento e per finire, introdotto in PHP 8, argomenti denominati'
-type: publish
+type: post
 id: 905
 images: /static/images/posts/logo-php.webp
 category:
   - PHP
 tag:
-  - appunti-dev
   - php
   - funzioni
 post_format: []
