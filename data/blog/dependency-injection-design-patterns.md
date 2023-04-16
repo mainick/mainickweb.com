@@ -70,7 +70,7 @@ Esistono molti framework e librerie che supportano il pattern Dependency Injecti
 
 Uno dei framework più popolari, che utilizziamo anche in azienda, è [Symfony](https://symfony.com/), un framework php adatto a creare 
 applicazioni web e microservizi. Ha un potente contenitore di iniezione delle dipendenze che consente agli 
-sviluppatori di gestire facilmente le proprie dipendenze e servizi.
+sviluppatori di gestire facilmente le proprie dipendenze e servizi ([Come testare un service privato in Symfony](https://www.mainickweb.com/blog/come-testare-un-service-privato-in-symfony)).
 
 Per l'esempio che andremo a sviluppare in questo articolo, utilizzeremo un contenitore di dipendenze basato sulla 
 libreria [PHP-DI](https://php-di.org/), che semplifica la configurazione e l'iniezione delle dipendenze. 
