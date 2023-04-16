@@ -31,7 +31,7 @@ Implementare l’esempio sopra senza l’utilizzo di callback può essere simile
 <?php
 function searchBySearchEngine($term, $searchEngine) {
   $result = array();
-  foreach ($searchEngine as $engine( {
+  foreach ($searchEngine as $engine) {
     // ricerca termine per ciascun motore di ricerca
     $result[] = array(
       'search_engine' => $engine,
@@ -40,7 +40,7 @@ function searchBySearchEngine($term, $searchEngine) {
   }
   return $result;
 }
-$searchEngine = array('http://www.google.it', 'http://www.bing.com', 'http://it.yahoo.com', // altri...);
+$searchEngine = array('http://www.google.it', 'http://www.bing.com', 'http://it.yahoo.com'); // altri...
 // inizio ricerca del termine sui motori di ricerca
 $term = 'MaiNick';
 $data = searchBySearchEngine($term, $searchEngine);
@@ -107,12 +107,12 @@ class MyClass {
       'search_engine' => $engine,
       'result' => 'risultati di ricerca'
     );
-    echo "Risultati di ricerca di $quot; . $term . " eseguita su " . $values['search_engine'] . "<br />";
+    echo "Risultati di ricerca di $quot; $term eseguita su " . $values['search_engine'] . "<br />";
 
     return $values;
   }
 }
-$searchEngine = array('http://www.google.it', 'http://www.bing.com', 'http://it.yahoo.com', // altri...);
+$searchEngine = array('http://www.google.it', 'http://www.bing.com', 'http://it.yahoo.com'); // altri...
 // inizio ricerca del termine sui motori di ricerca
 $term = 'MaiNick';
 $data = searchBySearchEngine($term, $searchEngine, array('MyClass', 'searchComplete'));
