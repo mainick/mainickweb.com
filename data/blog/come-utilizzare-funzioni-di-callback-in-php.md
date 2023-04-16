@@ -48,7 +48,6 @@ $data = searchBySearchEngine($term, $searchEngine);
 foreach ($data as $result) {
   echo "Risultati di ricerca di " . $term . " eseguita su " . $result['search_engine'] . "<br />";
 }
-?>
 ```
 
 L’esempio può essere modificato per utilizzare la **funzione di callback**, richiamata ogni volta che un singolo motore di ricerca ha completato la ricerca.
@@ -82,7 +81,6 @@ class MyClassObj {
 }
 $obj = new MyClassObj();
 $callback = array($obj, 'myCallback');
-?>
 ```
 
 Per verificare se una variabile può essere definita come una funzione, e quindi utilizzato come una callback, possiamo utilizzare `is_callable()`, una funzione PHP che accetta la callback come unico argomento. Quindi possiamo utilizzare la funzione `call_user_func()` che permette di **richiamare la funzione callback** passata come primo argomento e ulteriori argomenti passati come parametri alla callback stessa.
@@ -93,7 +91,7 @@ Tornando al nostro esempio iniziale, possiamo modificare la funzione `searchBySe
 <?php
 function searchBySearchEngine($term, $searchEngine, $callback = null) {
   $result = array();
-  foreach ($searchEngine as $engine( {
+  foreach ($searchEngine as $engine) {
     // ricerca termine per ciascun motore di ricerca
     if (is_callable($callback)) {
       $result = call_user_func($callback, $term, $searchEngine);
@@ -118,7 +116,6 @@ $searchEngine = array('http://www.google.it', 'http://www.bing.com', 'http://it.
 // inizio ricerca del termine sui motori di ricerca
 $term = 'MaiNick';
 $data = searchBySearchEngine($term, $searchEngine, array('MyClass', 'searchComplete'));
-?>
 ```
 
 Potere notare che all’esecuzione del codice sopra i messaggi di feedback vengono visualizzati ogni qual volta un motore di ricerca ha restituito dei risultati, e non come nel primo codice al termine dello script.
