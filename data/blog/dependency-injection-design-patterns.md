@@ -1,10 +1,10 @@
 ---
-title: 'Strategy Pattern - Design Patterns'
+title: 'Dependency Injection - Design Patterns'
 date: '2023-04-17T07:30:09+01:00'
 status: publish
 permalink: /strategy-pattern-design-patterns
 author: 'Maico Orazio'
-excerpt: 'Il pattern Strategy è un pattern comportamentale che consente di definire una famiglia di algoritmi, incapsularli in classi separate e rendere gli algoritmi intercambiabili. In questo modo, si può selezionare un algoritmo a runtime, in base alla necessità o al contesto specifico.'
+excerpt: 'La Dependency Injection (DI) è un pattern architetturale che viene spesso utilizzato nei progetti software. Il suo scopo principale è quello di migliorare la modularità e la manutenibilità del codice, riducendo la complessità delle dipendenze tra i vari componenti del sistema.'
 type: post
 id: 906
 images: /static/images/posts/logo-design-patterns.webp
