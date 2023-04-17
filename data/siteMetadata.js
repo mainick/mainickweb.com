@@ -18,7 +18,7 @@ const siteMetadata = {
   twitter_nickname: '@mainick',
   github: 'https://github.com/mainick',
   twitter: 'https://twitter.com/mainick',
-  facebook: 'http://www.facebook.com/maico.orazio',
+  facebook: 'https://www.facebook.com/maico.orazio',
   devto: 'https://dev.to/mainick',
   mediumcom: 'https://medium.com/@mainick',
   linkedin: 'https://www.linkedin.com/in/maicoorazio',

@@ -2,7 +2,7 @@
 title: 'Dependency Injection - Design Patterns'
 date: '2023-04-17T07:30:09+01:00'
 status: publish
-permalink: /strategy-pattern-design-patterns
+permalink: /dependency-injection-design-patterns
 author: 'Maico Orazio'
 excerpt: 'La Dependency Injection (DI) è un pattern architetturale che viene spesso utilizzato nei progetti software. Il suo scopo principale è quello di migliorare la modularità e la manutenibilità del codice, riducendo la complessità delle dipendenze tra i vari componenti del sistema.'
 type: post
