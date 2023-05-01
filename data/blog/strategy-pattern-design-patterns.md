@@ -19,7 +19,7 @@ post_format: []
 
 ![Design Patterns](/static/images/posts/logo-design-patterns.webp)
 
-Secondo artico della serie **Design Patterns**. Procediamo con il pattern Strategy.
+Secondo artico della serie [**Design Patterns**](https://www.mainickweb.com/tags/design-patterns). Procediamo con il pattern Strategy.
 
 ## Definizione
 
