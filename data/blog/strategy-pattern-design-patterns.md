@@ -1,6 +1,6 @@
 ---
 title: 'Strategy Pattern - Design Patterns'
-date: '2023-05-02T07:30:09+01:00'
+date: '2023-05-01T07:30:09+01:00'
 status: publish
 permalink: /strategy-pattern-design-patterns
 author: 'Maico Orazio'
