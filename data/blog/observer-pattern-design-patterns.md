@@ -115,7 +115,24 @@ class ExampleObserver implements Observer
         echo "Osservatore {$this->name} ha ricevuto una notifica di cambio di stato. Nuovo stato: {$state}\n";
     }
 }
+```
 
+In questo esempio, abbiamo definito un'interfaccia `Observer` che definisce un metodo `update()`, il quale viene 
+richiamato dal soggetto quando lo stato cambia. Abbiamo quindi definito una classe `Subject` che mantiene una lista 
+di osservatori registrati e fornisce i metodi:
+
+* `attach()`: per gestire l'aggiunta di un osservatore
+* `detach()`: per gestire la rimozione di un osservatore
+* `setState`: per modificare lo stato del soggetto
+* `getState`: per recuperare lo stato corrente del soggetto
+* `notify()`: per notificare gli osservatori.
+
+Abbiamo quindi creato una classe `ExampleObserver` che implementa l'interfaccia `Observer` e definisce il 
+comportamento da adottare quando avviene la notifica del cambiamento di stato del soggetto.
+
+Utilizziamo le classi implementate per realizzare un possibile scenario del pattern Observer.
+
+```php
 // Creiamo un soggetto e due osservatori
 $subject = new Subject();
 $observer1 = new ExampleObserver("Osservatore 1");
@@ -135,23 +152,9 @@ $subject->detach($observer2);
 $subject->setState("Stato 2");
 ```
 
-In questo esempio, abbiamo definito un'interfaccia `Observer` che definisce un metodo `update()`, il quale viene 
-richiamato dal soggetto quando lo stato cambia. Abbiamo quindi definito una classe `Subject` che mantiene una lista 
-di osservatori registrati e fornisce i metodi:
-
-* `attach()`: per gestire l'aggiunta di un osservatore
-* `detach()`: per gestire la rimozione di un osservatore
-* `setState`: per modificare lo stato del soggetto
-* `getState`: per recuperare lo stato corrente del soggetto
-* `notify()`: per notificare gli osservatori.
-
-Abbiamo quindi creato una classe `ExampleObserver` che implementa l'interfaccia `Observer` e definisce il 
-comportamento da adottare quando avviene la notifica del cambiamento di stato del soggetto.
-
-Nella restante parte del codice abbiamo utilizzato le classi implementate per eseguire un possibile scenario del 
-pattern Observer. Abbiamo creato un'istanza del soggetto, due istanze di osservatori, li abbiamo registrati al 
-soggetto, abbiamo cambiato lo stato del soggetto e notificato gli osservatori. Abbiamo quindi rimosso un osservatore 
-dal soggetto, abbiamo cambiato nuovamente lo stato del soggetto e notificato gli osservatori rimanenti.
+Abbiamo creato un'istanza del soggetto, due istanze di osservatori, li abbiamo registrati al soggetto, e, cambiato 
+lo stato del soggetto, viene notificato agli osservatori. Abbiamo quindi rimosso un osservatore dal soggetto, 
+cambiato nuovamente lo stato del soggetto e notificato gli osservatori rimanenti.
 
 Di seguito il risultato di ciò che abbiamo implementato:
 
