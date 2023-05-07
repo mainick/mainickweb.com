@@ -153,8 +153,8 @@ $subject->setState("Stato 2");
 ```
 
 Abbiamo creato un'istanza del soggetto, due istanze di osservatori, li abbiamo registrati al soggetto, e, cambiato 
-lo stato del soggetto, viene notificato agli osservatori. Abbiamo quindi rimosso un osservatore dal soggetto, 
-cambiato nuovamente lo stato del soggetto e notificato gli osservatori rimanenti.
+lo stato del soggetto, notificato gli osservatori. Abbiamo quindi rimosso un osservatore dal soggetto, cambiato 
+nuovamente lo stato del soggetto e notificato gli osservatori rimanenti.
 
 Di seguito il risultato di ciò che abbiamo implementato:
 
