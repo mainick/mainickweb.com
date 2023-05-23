@@ -25,9 +25,6 @@ module.exports = {
         primary: colors.sky,
         gray: colors.gray,
       },
-      backgroundColor: (theme) => ({
-        'green-bottle': '#172b36',
-      }),
       typography: (theme) => ({
         DEFAULT: {
           css: {
