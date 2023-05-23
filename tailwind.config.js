@@ -24,8 +24,10 @@ module.exports = {
       colors: {
         primary: colors.sky,
         gray: colors.gray,
-        'green-bottle': '#172b36',
       },
+      backgroundColor: (theme) => ({
+        'green-bottle': '#172b36',
+      }),
       typography: (theme) => ({
         DEFAULT: {
           css: {
