@@ -1,7 +1,7 @@
 ---
 title: 'Analisi delle date utilizzando le funzioni `date_parse()` e `date_parse_from_format()`'
 date: '2023-06-22T07:30:09+01:00'
-status: public
+status: publish
 permalink: /analisi-delle-date-utilizzando-le-funzioni-date_parse-e-date_parse_from_format
 author: 'Maico Orazio'
 excerpt: ''
