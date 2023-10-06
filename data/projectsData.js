@@ -1,5 +1,12 @@
 const projectsData = [
   {
+    title: 'KeycloakClientBundle',
+    description: `The KeycloakClientBundle is bundle for Symfony, designed to simplify Keycloak integration into your application in Symfony and provide additional functionality for token management and user information access. It also includes a listener to verify the token on every request.`,
+    imgSrc: '/static/images/projects/keycloak-client-bundle.png',
+    href: 'https://github.com/mainick/KeycloakClientBundle',
+    tags: ['symfony-bundle', 'keycloak', 'keycloak-client', 'jwt-token', 'oauth2-keycloak'],
+  },
+  {
     title: 'MaiNick Web Blog',
     description: `MaiNick Web - Il mio blog | Tutorial e Risorse gratuite su JavaScript, PHP e programmazione in generale.`,
     imgSrc: '/static/images/projects/project-mainickweb.png',
