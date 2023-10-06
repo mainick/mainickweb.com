@@ -38,7 +38,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#FFFFFF" />
           <link rel="alternate" type="application/rss+xml" href={prefixImage + '/feed.xml'} />
         </Head>
-        <body className="bg-green-bottle bg-white text-black antialiased dark:text-white">
+        <body className="bg-white text-black antialiased dark:text-white dark:bg-green-bottle">
           <Main />
           <NextScript />
         </body>
