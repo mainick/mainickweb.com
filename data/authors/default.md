@@ -35,6 +35,7 @@ con forti capacità organizzative e di problem-solving.
 Lavoro principalmente con **Php** e **JavaScript**. I miei progetti precedenti includono lo sviluppo e
 la creazione di applicazioni web con framework **PHP Symfony** e librerie **JavaScript**, quali **jQuery** e **ReactJS**.
 
+**Come sviluppatore sono sempre alla ricerca di modi per migliorarmi.**
 Sono molto dedito a imparare cose nuove e a credere veramente che non dovresti mai smettere di imparare. Continuo ad approfondire le mie conoscenze
 e a sperimentare, per migliorarmi e seguire l'evoluzione di questo fantastico mondo: **in questo momento, per lo più legate a JS**.
 
